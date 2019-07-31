@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Form</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+        <legend>  Personal Details  </legend>
+            <div class="center">
+                <label for="fname">First Name:</label>
+                <div></div>
+                <input type="text" name="fname"/>
+            </div>
+            <div class="center">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname"/>
+            </div>
+            <div class="center">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male">Male</input>
+                <input type="radio" name="gender" id="female">Female</input>
+            </div>
+            <div class="center">
+                <label for="hobby">Hobby</label>
+                <input type="checkbox" name="hobby" id="dance">Dance</input>
+                <input type="checkbox" name="hobby" id="music">Music</input>
+                <input type="checkbox" name="hobby" id="cricket">Cricket</input>
+            </div>
+            <div class="center">
+                <label for="color">Color</label>
+                <input type="color" name="color" value="#000000">
+            </div>
+            <div class="center">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="center">
+                <label for="before">Enter a date before 1980-01-01</label>
+                <input type="date" name="before" id="before" max=1980-01-01 />
+            </div>
+            <div class="center">
+                <label for="after">Enter a date after 2000-01-01</label>
+                <input type="date" name="after" id="after" min=2000-01-01 />
+            </div>
+            <div class="center">
+                <label for="date">Date & Time</label>
+                <input type="datetime-local" id="date" name="date"/>
+            </div>
+            <div class="center">
+                <label for="month">Month</label>
+                <input type="month" name="month" id="month"/>
+            </div>
+            <div class="center">
+                <label for="img">Image</label>
+                <input type="image" name="img" id="img" />
+            </div>
+            <div class="center">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            <div class="center">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"/>
+            </div>
+            <div class="center">
+                <label for="upload">Upload Photo</label>
+                <input type="file" name="upload" id="upload" />
+            </div>
+            <div class="center">
+                <label for="hidden">Hidden</label>
+                <input type="hidden" name="hidden" id="hidden"/>
+            </div>
+            <div class="center">
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" />
+            </div>
+            <div class="center">
+                <label for="num">Number</label>
+                <input type="number" name="num" id="num" />
+            </div>
+            <div class="center">
+                <label for="range">Range</label>
+                <input type="range" name="range" id="range" />
+            </div>
+            <div class="center">
+                <label for="contact">Contact No</label>
+                <input type="number" minlength="10" maxlength="10" name="contact" id="contact" />
+            </div>
+            <div class="center">
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" />
+            </div>
+            <div class="center">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url"></input>
+            </div>
+            <div class="center">
+                <label for="week">Week</label>
+                <input type="week" name="week" id="week"/>
+            </div>
+            <div class="center">
+                <label for="address">Address</label>
+                <textarea name="address" id="address"></textarea>
+            </div>
+            <div class="center">
+                <label for="car">Car</label>
+                <select name="car">
+                    <option value="Select a car company">Select a car company</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+            <div class="center">
+                <label for="browsers">Browsers</label>
+                <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Opera">Opera</option>
+                    </datalist>
+                </input>
+            </div>
+            <div class="centerBtn">
+                <input type="button" name="btn" class="btn" value="Click Me!"></input>
+                <input type="reset" class="btn"/>
+                <input type="submit" class="btn"/>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
