@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border Image</title>
+</head>
+<style>
+    body {
+        background-color:coral;
+    }
+    #element-1 {
+        border: 10px solid;
+        border-image: url(https://66.media.tumblr.com/avatar_34cef73ab7a6_128.png) 30% round;
+        border-radius: 10px;
+        padding: 20px;
+        z-index: 2;
+        background: transparent;
+    }
+    div {
+        width: 50vh;
+        height: 20vh;
+        margin-left: 35vw;
+        padding: 20px;
+        margin-top: 5vh;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div><h1>Border Image</h1></div>
+    <div id="element-1">
+            I've an image border.
+    </div>
+</body>
+</html>
