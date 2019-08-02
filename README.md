@@ -13,6 +13,8 @@ Collection of assignments given at IIHT Bangalore during Java Full Stack Trainin
 ## Aug 2,2019
 
 1. [Bootstrap Starter](Aug2-Bootstrap/1-BootstrapStarter.html)
+2. [Login Form](Aug2-Bootstrap/2-Login.html)
+
 
 ## Aug 1,2019
 
