@@ -5,10 +5,10 @@ Collection of assignments given at IIHT Bangalore during Java Full Stack Trainin
 
 | S. No| Date          | Description |
 | -----|:-------------:| -----:|
-| 1    | [July 26,2019](#July-26,-2019)  | [Java Programs](#July-26,-2019)|
-| 2    | [July 31'2019](#July-31,-2019)  | [Basic HTML, CSS & JS](#July-31,-2019) |
-| 3    | [Aug 1,2019](#Aug-1,2019)  | [CSS](#Aug-1,2019)  |
-| 4    | [Aug 2,2019](#Aug-2,2019)  | [Bootstrap](#Aug-2,2019) |
+| 1    | [July 26,2019](#july-262019)  | [Java Programs](#july-262019)|
+| 2    | [July 31'2019](#july-312019)  | [Basic HTML, CSS & JS](#july-312019) |
+| 3    | [Aug 1,2019](#aug-12019)  | [CSS](#aug-12019)  |
+| 4    | [Aug 2,2019](#aug-22019)  | [Bootstrap](#aug-22019) |
 
 ## Aug 2,2019
 
@@ -18,13 +18,14 @@ Collection of assignments given at IIHT Bangalore during Java Full Stack Trainin
 
 1. [Rounded Corners](Aug1-CSS/1-roundedCorners.html)
 2. [Border Image](Aug1-CSS/2-borderImage.html)
-3. [Background]()
-4. [CSS Colors](Aug1-CSS/2-borderImage.html)
-5. [CSS Gradients](Aug1-CSS/2-borderImage.html)
-6. [CSS Shadows](Aug1-CSS/2-borderImage.html)
-7. [CSS Text Shadows](Aug1-CSS/2-borderImage.html)
-8. [CSS 2D Transform](Aug1-CSS/2-borderImage.html)
-9. [CSS 3D Transform](Aug1-CSS/2-borderImage.html)
+3. [Background](Aug1-CSS/3-background.html))
+4. [CSS Colors](Aug1-CSS/4-CSSColors.html)
+5. [CSS Gradients](Aug1-CSS/5-CSSGradient.html)
+6. [CSS Shadows](Aug1-CSS/6-CSSShadows.html)
+7. [CSS Text Shadows](Aug1-CSS/7-CSSTextEffects.html)
+8. [CSS Web Fonts](Aug1-CSS/7-WebFonts.html)
+9. [CSS 2D Transform](Aug1-CSS/8-CSS2DTransform.html)
+10. [CSS 3D Transform](Aug1-CSS/9-CSS3DTransform.html)
 
 
 ## July 31,2019
