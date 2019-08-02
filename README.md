@@ -32,9 +32,9 @@ Collection of assignments given at IIHT Bangalore during Java Full Stack Trainin
 
 ## July 31,2019
 
-1. [CSS](July31-Basics/CSS)
-2. [JS](July31-Basics/JS)
-3. [Form](July31-Basics/Form)
+1. [CSS](https://github.com/gupta-ji6/IIHT-Assignments/tree/master/July31-Basics/CSS)
+2. [JS](https://github.com/gupta-ji6/IIHT-Assignments/tree/master/July31-Basics/CSS)
+3. [Form](July31-Basics/Form/form.html)
 
 ## July 26,2019
 
