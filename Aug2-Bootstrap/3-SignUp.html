@@ -10,6 +10,44 @@
 
     <title>Sign Up - IIHT</title>
     <style>
+      :root {
+        --f-desktop: 35vw;
+        --f-tablet: 60vw;
+        --f-mobile: 80vw;
+        --ip-d: 20vw;
+        --ip-t: 40vw;
+        --ip-m: 60vw;
+      }
+
+      /* laptops & desktops */
+        @media (min-width: 1025px) {
+          .form-signin {
+            width: var(--f-desktop);
+          }
+          input, .form-content {
+            width: var(--ip-d);
+          }
+        }
+
+        /* tablets */
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .form-signin {
+            width: var(--f-tablet);
+          }
+          input, .form-content {
+            width: var(--ip-t);
+          }
+        }
+
+        /* mobile */
+        @media (min-width: 320px) and (max-width: 480px) {
+          .form-signin {
+            width: var(--f-mobile);
+          }
+          input, .form-content {
+            width: var(--ip-m);
+          }
+        }
         body {
             display: flex;
             align-items: center;
@@ -18,31 +56,31 @@
             background: #000046;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
         }
         .form-signin {
             background-color: white;
             border: 1px solid white;
             border-radius: 5px;
-            margin-top: 5vh;
-            margin-bottom: 5vh;
-            width: 35vw;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
             padding: 20px;
+            height: 80vh;
         }
-        input, select {
+        input#name, input#inputEmail, input#inputPassword, input#confirmPassword, .input-group mb-3, select {
             margin-bottom: 20px;
-            width: 20w;
         }
         button {
             background-color: #000046 !important;
+            margin-top: 20px;
         }
         .form-content {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            width: 20vw;
-            /* margin-top: 10vh; */
         }
     </style>
   </head>

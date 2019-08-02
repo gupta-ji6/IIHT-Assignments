@@ -10,6 +10,45 @@
 
     <title>Login - IIHT</title>
     <style>
+      :root {
+        --f-desktop: 35vw;
+        --f-tablet: 60vw;
+        --f-mobile: 80vw;
+        --ip-d: 20vw;
+        --ip-t: 40vw;
+        --ip-m: 60vw;
+      }
+
+      /* laptops & desktops */
+        @media (min-width: 1025px) {
+          .form-signin {
+            width: var(--f-desktop);
+          }
+          input, .form-content {
+            width: var(--ip-d);
+          }
+        }
+
+        /* tablets */
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .form-signin {
+            width: var(--f-tablet);
+          }
+          input, .form-content {
+            width: var(--ip-t);
+          }
+        }
+
+        /* mobile */
+        @media (min-width: 320px) and (max-width: 480px) {
+          .form-signin {
+            width: var(--f-mobile);
+          }
+          input, .form-content {
+            width: var(--ip-m);
+          }
+        }
+        
         body {
             display: flex;
             align-items: center;
@@ -26,23 +65,21 @@
             border-radius: 5px;
             margin-top: 10vh;
             margin-bottom: 10vh;
-            width: 35vw;
             height: 80vh;
             padding: 20px;
         }
-        input {
+        input#inputEmail, input#inputPassword {
             margin-bottom: 20px;
-            width: 20w;
         }
         button {
             background-color: #000046 !important;
+            margin-top: 20px;
         }
         .form-content {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            width: 20vw;
             height: 70vh;
             margin-top: 15vh;
         }
@@ -57,11 +94,6 @@
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <div class="checkbox mb-3">
-                    <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
                 <button class="btn btn-lg btn-primary btn-block" type="button" data-toggle="modal" data-target="#exampleModal">Sign in</button>
                 <h7>New user? <a href="3-SignUp.html">Sign up </a>here.</h7>
                 <p class="mt-5 mb-3 text-muted">Copyright &copy; 2019 IIHT. All Rights Reserved</p>
