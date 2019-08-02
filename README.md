@@ -25,9 +25,9 @@ Collection of assignments given at IIHT Bangalore during Java Full Stack Trainin
 5. [CSS Gradients](Aug1-CSS/5-CSSGradient.html)
 6. [CSS Shadows](Aug1-CSS/6-CSSShadows.html)
 7. [CSS Text Shadows](Aug1-CSS/7-CSSTextEffects.html)
-8. [CSS Web Fonts](Aug1-CSS/7-WebFonts.html)
-9. [CSS 2D Transform](Aug1-CSS/8-CSS2DTransform.html)
-10. [CSS 3D Transform](Aug1-CSS/9-CSS3DTransform.html)
+8. [CSS Web Fonts](Aug1-CSS/8-WebFonts.html)
+9. [CSS 2D Transform](Aug1-CSS/9-CSS2DTransform.html)
+10. [CSS 3D Transform](Aug1-CSS/10-CSS3DTransform.html)
 
 
 ## July 31,2019
