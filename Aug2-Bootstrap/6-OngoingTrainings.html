@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Ongoing Trainings</title>
+
+    <style>
+      .navbar-dark .navbar-toggler {
+        border-color: rgb(0, 0, 70);
+      }
+      .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+      .container {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark sticky-top navbar-expand-md"
+      style="background: rgb(0,0,0);"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://s3-ap-southeast-1.amazonaws.com/tv-prod/member/photo/2743889-large.png"
+          width="150"
+          height="110"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="6-OngoingTrainings.html"
+              >Ongoing Trainings<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="5-CompletedTrainings.html"
+              >Completed Trainings</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav mr-auto justify-content-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2-Login.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center">
+        <h1 class="display-4">Ongoing Trainings</h1>
+        <table class="table table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">S.No.</th>
+              <th scope="col">Training ID</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Progress</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Trainer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>68926</td>
+              <td>Java Full Stack</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="78"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 78%"
+                  >
+                    78%
+                  </div>
+                </div>
+              </td>
+              <td>12-07-2019</td>
+              <td>30-09-2019</td>
+              <td>John Cena</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>68927</td>
+              <td>MEAN Stack</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="36"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 36%"
+                  >
+                    36%
+                  </div>
+                </div>
+              </td>
+              <td>06-07-2019</td>
+              <td>28-09-2019</td>
+              <td>Triple H</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>68927</td>
+              <td>MERN Stack</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="71"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 71%"
+                  >
+                    71%
+                  </div>
+                </div>
+              </td>
+              <td>08-02-2019</td>
+              <td>16-04-2019</td>
+              <td>Shawn Michales</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>68928</td>
+              <td>Dev Ops</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="82"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 82%"
+                  >
+                    82%
+                  </div>
+                </div>
+              </td>
+              <td>11-04-2019</td>
+              <td>21-07-2019</td>
+              <td>Steve Austin</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>68929</td>
+              <td>Firebase Tools</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="59"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 59%"
+                  >
+                    59%
+                  </div>
+                </div>
+              </td>
+              <td>15-07-2019</td>
+              <td>14-09-2019</td>
+              <td>Big Show</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>68930</td>
+              <td>Git & GitHub</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="42"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 42%"
+                  >
+                    42%
+                  </div>
+                </div>
+              </td>
+              <td>26-02-2019</td>
+              <td>19-04-2019</td>
+              <td>Randy Orton</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>68931</td>
+              <td>Amazon AWS</td>
+              <td>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="63"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 63%"
+                  >
+                    63%
+                  </div>
+                </div>
+              </td>
+              <td>14-03-2019</td>
+              <td>16-05-2019</td>
+              <td>Rey Mysterio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
