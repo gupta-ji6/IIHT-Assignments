@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Objects</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      var person = {
+        fName: "Ayush",
+        lName: "Gupta",
+        email: "ayushgupta197@gmail.com",
+        contact: 7877791648,
+        employeeID: 805618
+      };
+      window.onload = function() {
+        document.getElementById("car").style.display = "none";
+        document.getElementById("emp").style.display = "none";
+      };
+      function showEmployee() {
+        document.getElementById("emp").style.display = "block";
+        document.getElementById("fName").innerHTML = person.fName;
+        document.getElementById("lName").innerHTML = person.lName;
+        document.getElementById("email").innerHTML = person.email;
+        document.getElementById("contact").innerHTML = person.contact;
+        document.getElementById("employeeID").innerHTML = person.employeeID;
+      }
+
+      var car = {
+        brand: "Hyundai",
+        model: "i10",
+        fuel: "Petrol",
+        mileage: "16KMPL"
+      };
+      function showCar() {
+        document.getElementById("car").style.display = "block";
+        document.getElementById("brand").innerHTML = car.brand;
+        document.getElementById("model").innerHTML = car.model;
+        document.getElementById("fuel").innerHTML = car.fuel;
+        document.getElementById("mileage").innerHTML = car.mileage;
+      }
+
+      console.log(person);
+      console.log(car);
+    </script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Roboto Slab", serif;
+        font-size: 30px;
+        text-align: center;
+      }
+      button {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        margin: 5px;
+        width: 25vw;
+        height: 10vh;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: "Roboto Slab", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <button onclick="showEmployee()">Show Employee Details</button>
+    <div id="emp">
+      <ol>
+        <li id="fName"></li>
+        <li id="lName"></li>
+        <li id="email"></li>
+        <li id="contact"></li>
+        <li id="employeeID"></li>
+      </ol>
+    </div>
+    <button onclick="showCar()">Show Car Details</button>
+    <div id="car">
+      <ol>
+        <li id="brand"></li>
+        <li id="model"></li>
+        <li id="fuel"></li>
+        <li id="mileage"></li>
+      </ol>
+    </div>
+  </body>
+</html>

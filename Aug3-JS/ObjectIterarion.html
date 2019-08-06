@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Array Iterartion</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function show() {
+          var text = "<ul>";
+        var person = ["Ayush", "Gupta", "ayushgupta197@gmail.com", 7877791648];
+        function showEmployee(value) {
+            text += "<li>" + value + "</li>";
+        }
+        person.forEach(showEmployee);
+        text += "</ul>";
+        document.getElementById("emp").innerHTML = text;
+    }
+    </script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Roboto Slab", serif;
+        font-size: 30px;
+        /* text-align: center; */
+      }
+      button {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        margin: 5px;
+        width: 25vw;
+        height: 10vh;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: "Roboto Slab", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS Array Iterartion</h1>
+    <button onclick="show()">Show Employee Details</button>
+    <div id="emp"></div>
+  </body>
+</html>
