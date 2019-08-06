@@ -1,0 +1,19 @@
+.colorClass {
+    background: black;
+    color: white;
+    margin-left: 35vw;
+    margin-top: 45vh;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+    height: 8vh;
+    font-size: 20px;
+}
+.bold {
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.italicClass {
+    font-style: italic;
+}

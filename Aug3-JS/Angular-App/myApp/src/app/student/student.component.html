@@ -1,0 +1,29 @@
+<button (click)="toggleDetails()"> {{showDetails ? 'Hide' : 'Show'}} Student Details</button>
+<table>
+        <thead>
+                <tr>
+                    <th attr.colspan = "{{col}}">Student Details</th>
+                    <!-- <input type="text" name="" id="" value="{{col}}"> -->
+                </tr>
+            </thead>
+    <tbody *ngIf = 'showDetails'>
+            <tr>
+                    <td>First Name</td>
+                    <td>{{firstName}}</td> 
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>{{lastName}}</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>{{gender}}</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>{{age}}</td>   
+                </tr>
+    </tbody>
+</table>
+
+
