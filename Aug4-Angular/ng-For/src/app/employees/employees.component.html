@@ -1,0 +1,42 @@
+<table>
+  <caption>
+    Employee Details
+  </caption>
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Domain</th>
+      <th>Index</th>
+      <th>Is First</th>
+      <th>is Last</th>
+      <th>Even</th>
+      <th>Odd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let employee of employees; trackBy:trackByEmpCode; let i = index; let isFirst = first; let isLast = last; let even = even; let odd = odd;'>
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name | uppercase }}</td>
+      <td>{{ employee.gender }}</td>
+      <td>{{ employee.domain }}</td>
+      <td>{{ i }}</td>
+      <td>{{ isFirst }}</td>
+      <td>{{isLast}}</td>
+      <td>{{even}}</td>
+      <td>{{odd}}</td>
+      <td></td>
+    </tr>
+    <tr *ngIf='!employees'>
+      <td colspan="5">
+        No employess to display
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <button (click)="getEmployees()">
+    Refresh Employess
+  </button>
+</div>

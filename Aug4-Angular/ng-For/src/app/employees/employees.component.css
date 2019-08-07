@@ -1,0 +1,42 @@
+table {
+  font-family: "Roboto Slab", serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  color: #f4b41a;
+  background: #143d59;
+}
+
+caption {
+  font-size: 35px;
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+td {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+th {
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #143d59;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
