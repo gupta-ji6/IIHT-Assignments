@@ -1,0 +1,25 @@
+<mat-card>
+  <form >
+    <mat-form-field>
+      <mat-label>Select Your Role</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let role of roles">
+          {{ role }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Email"
+        required
+      />
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Password" type=password>
+    </mat-form-field>
+  </form>
+</mat-card>
