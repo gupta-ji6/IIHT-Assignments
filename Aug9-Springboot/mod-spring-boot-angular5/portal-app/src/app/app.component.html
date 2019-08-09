@@ -1,15 +1,23 @@
 <div class="gradient">
   <div class="container-fluid">
-    <span class="header">{{ title }} </span>
+    <!-- <a routerLink="/home"> -->
+      <span class="header">{{ title }} </span>
+    <!-- </a> -->
     <ul>
       <li><a routerLink="/login">Login</a></li>
       <li><a routerLink="/signup">Sign Up</a></li>
-      <li><a routerLink="/user">User Landing Page</a></li>
-      <li><a routerLink="/completed-trainings">Completed Trainings</a></li>
-      <li><a routerLink="/ongoing-trainings">Ongoing Trainings</a></li>
+      <li *ngIf="router.url !== '/home'">
+        <a routerLink="/user">User Landing Page</a>
+      </li>
+      <li *ngIf="router.url !== '/home'">
+        <a routerLink="/completed-trainings">Completed Trainings</a>
+      </li>
+      <li *ngIf="router.url !== '/home'">
+        <a routerLink="/ongoing-trainings">Ongoing Trainings</a>
+      </li>
       <!-- <li><a routerLink="/trainer">Trainer Profile</a></li> -->
-      <li><a routerLink="/users">List Users</a></li>
-      <li><a routerLink="/add">Add User</a></li>
+      <!-- <li><a routerLink="/users">List Users</a></li> -->
+      <!-- <li><a routerLink="/add">Add User</a></li> -->
     </ul>
   </div>
 </div>
