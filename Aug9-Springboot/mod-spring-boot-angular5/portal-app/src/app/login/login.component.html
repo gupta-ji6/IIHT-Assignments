@@ -1,0 +1,84 @@
+<div class="content">
+  <form class="form-signin">
+    <div class="form-content mx-auto my-auto">
+      <img
+        class="mb-4"
+        src="https://s3-ap-southeast-1.amazonaws.com/tv-prod/photo/52971-large.jpg"
+        alt=""
+        width="200"
+        height="100"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Log In</h1>
+      <label for="role" class="sr-only">Gender</label>
+      <select class="form-control" id="role">
+        <option disabled selected>Select your role</option>
+        <option>User</option>
+        <option>Mentor</option>
+        <option>Admin</option>
+      </select>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        type="email"
+        id="inputEmail"
+        class="form-control"
+        placeholder="Email address"
+        required
+        autofocus
+      />
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input
+        type="password"
+        id="inputPassword"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+      <button
+        class="btn btn-lg btn-primary btn-block"
+        type="button"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Log in
+      </button>
+      <div>New user? <a routerLink="/signup">Sign up </a>here.</div>
+      <p class="mt-5 mb-3 text-muted">
+        Copyright &copy; 2019 IIHT. All Rights Reserved
+      </p>
+    </div>
+  </form>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hey, there!</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You'll be logged in after I've learnt linking pages with SQL &#128521;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
