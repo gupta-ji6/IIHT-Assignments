@@ -8,7 +8,7 @@
       name="search"
       id="search"
       class="flex"
-      placeholder="What would you like to learn?"
+      placeholder="What would you like to learn today?"
     />
     <a class="flex s-icon" href="#">
       <img
@@ -22,16 +22,29 @@
   <div class="flex logos">
     <i class="devicon-react-original colored"></i>
     <i class="devicon-angularjs-plain colored"></i>
-    <i class="devicon-nodejs-plain-wordmark colored"></i>
+    <i class="devicon-nodejs-plain colored"></i>
     <i class="devicon-vuejs-plain colored"></i>
     <i class="devicon-javascript-plain colored"></i>
     <i class="devicon-git-plain colored"></i>
     <i class="devicon-java-plain-wordmark colored"></i>
-    <i class="devicon-django-plain colored"></i>
-    <i class="devicon-css3-plain colored"></i>
+    <i class="devicon-dot-net-plain colored"></i>
     <i class="devicon-html5-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
   </div>
   <div class="for">
-    For Individuals and Corporate Organizations. <br /> 1200+ and counting fully satisfied testinomials.
+    For Individuals and Corporate Organizations. <br /> <span class="count">1200</span>+ and counting fully satisfied testinomials.
   </div>
 </div>
+
+<script>
+  $('.count').each(function () {
+  var $this = $(this);
+  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    duration: 1000,
+    easing: 'swing',
+    step: function () {
+      $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
+</script>
