@@ -27,14 +27,24 @@
           url(https://source.unsplash.com/1600x900/?tech,laptop,computer);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position:inherit;
+        background-position: inherit;
         height: 100vh;
+        
       }
-      .navbar-dark .navbar-toggler {
-        border-color: rgb(0, 0, 70);
+      .navbar {
+        width: 100vw;
       }
-      .navbar-dark .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+      div.form-row {
+        width: 70vw;
+        margin-top: 5vh;
+      }
+
+      body > div > div > form > div > div.col-10 > input, body > div > div > form > div > div.col-2.align-middle > button {
+        height: 8vh;
+      }
+      a.nav-link {
+        color: rgba(0, 0, 0, 0.9);
       }
       .container {
         height: 80vh;
@@ -47,85 +57,68 @@
     </style>
   </head>
   <body>
-    <nav
-      class="navbar navbar-dark sticky-top navbar-expand-md"
-      style="background: rgb(255, 255, 255);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.499) 52%, rgba(149,149,149,0) 100%);"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img
-          src="https://s3-ap-southeast-1.amazonaws.com/tv-prod/member/photo/2743889-large.png"
-          width="150"
-          height="110"
+          src="mod-logo.png"
+          width="30"
+          height="30"
           class="d-inline-block align-top"
           alt=""
-        />
-      </a>
+        /> Mentor On Demand </a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse justify-content-md-center"
-        id="navbarNav"
-      >
-        <ul class="navbar-nav mr-auto">
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="6-OngoingTrainings.html"
-              >Ongoing Trainings</a
-            >
+              <a class="nav-link" href="#">Search Trainings</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Current Trainings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="5-CompletedTrainings.html"
-              >Completed Trainings</a
-            >
+            <a class="nav-link" href="#">Completed Trainings</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-        <ul class="navbar-nav mr-auto justify-content-md-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Notifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="2-Login.html">Logout</a>
-          </li>
-        </ul>
+        <a class="nav-link" href="#">Notifications</a>  
+        <a class="nav-link" href="#">Logout</a>
       </div>
     </nav>
 
     <div class="container align-items-center justify-content-center">
       <div class="row align-items-center justify-content-center">
-        <h1 class="display-1 text-center">Welcome to IIHT</h1>
+        <h1 class="display-3 text-center">Reskill Yourself With Skilled Trainers</h1>
         <p class="lead text-center">
           An IT training, job skilling and talent transformation company with
           industry oriented training solutions for individuals, corporates and
           the academia.
         </p>
+        <form>
+            <div class="form-row">
+              <div class="col-10">
+                  <input class="form-control form-control-lg text-center" type="text" placeholder="What would you like to learn today?">
+              </div>
+              <div class="col-2 align-middle">
+                  <button type="submit" class="btn btn-lg btn-primary btn-block">Search</button>
+              </div>
+            </div>
+          </form>
+        
       </div>
     </div>
 
