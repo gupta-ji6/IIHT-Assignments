@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Search Training - Mentor On Demand</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: inherit;
+        width: 100vw;
+        /* height: 100vh; */
+      }
+      .navbar {
+        width: 100vw;
+      }
+      a.nav-link {
+        color: rgba(0, 0, 0, 0.9);
+      }
+      .container {
+        /* height: 80vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div.form-row {
+        width: 70vw;
+        margin-top: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="mod-logo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Mentor On Demand
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Search Trainings <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Current Trainings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Completed Trainings</a>
+          </li>
+        </ul>
+        <a class="nav-link" href="#">Notifications</a>
+        <a class="nav-link" href="#">Logout</a>
+      </div>
+    </nav>
+
+    <div class="container align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center">
+        <form>
+          <div class="form-row">
+            <div class="col-10">
+              <input
+                class="form-control form-control-lg text-center"
+                type="text"
+                placeholder="What would you like to learn today?"
+                value="React JS"
+              />
+            </div>
+            <div class="col-2 align-middle">
+              <button type="submit" class="btn btn-lg btn-dark btn-block">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="row mb-5 mt-5">
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="https://gradientjoy.com/200"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jose Simpson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">✔️ Available</h6>
+                <div class="card-text">
+                  <small class="text-muted">Skills</small>
+                  <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">No. of Trainings</small>
+                      <div>23</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Experience</small>
+                      <div>2 Years</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <small class="text-muted">Work Timings</small>
+                      <div>9 AM - 6 PM</div>
+                    </div>
+                    <div class="col">
+                      <small class="text-muted">Rating</small>
+                      <div>4.6 &#9733;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Send Proposal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card-deck">
+              <div class="card">
+                  <div class="card-header">
+                      ✔️ Available
+                    </div>
+                <img src="https://gradientjoy.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jose Simpson</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">4.6 &#9733;</h6>
+                  <div class="card-text">
+                      <small class="text-muted">Skills</small>
+                      <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                    <small class="text-muted">No. of Trainings</small>
+                    <div>23</div>
+                    <small class="text-muted">Experience</small>
+                    <div>2 Years</div>
+                    <small class="text-muted">Work Timings</small>
+                    <div>9 AM - 6 PM</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Send Proposal</a>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                      ✔️ Available
+                    </div>
+                <img src="https://gradientjoy.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jose Simpson</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">4.6 &#9733;</h6>
+                  <div class="card-text">
+                      <small class="text-muted">Skills</small>
+                      <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                    <small class="text-muted">No. of Trainings</small>
+                    <div>23</div>
+                    <small class="text-muted">Experience</small>
+                    <div>2 Years</div>
+                    <small class="text-muted">Work Timings</small>
+                    <div>9 AM - 6 PM</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Send Proposal</a>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                      ✔️ Available
+                    </div>
+                <img src="https://gradientjoy.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jose Simpson</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">4.6 &#9733;</h6>
+                  <div class="card-text">
+                      <small class="text-muted">Skills</small>
+                      <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                    <small class="text-muted">No. of Trainings</small>
+                    <div>23</div>
+                    <small class="text-muted">Experience</small>
+                    <div>2 Years</div>
+                    <small class="text-muted">Work Timings</small>
+                    <div>9 AM - 6 PM</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Send Proposal</a>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="card-header">
+                      ✔️ Available
+                    </div>
+                <img src="https://gradientjoy.com/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jose Simpson</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">4.6 &#9733;</h6>
+                  <div class="card-text">
+                      <small class="text-muted">Skills</small>
+                      <div>Java, Angular, JavaScript, React, Vue, Flutter</div>
+                    <small class="text-muted">No. of Trainings</small>
+                    <div>23</div>
+                    <small class="text-muted">Experience</small>
+                    <div>2 Years</div>
+                    <small class="text-muted">Work Timings</small>
+                    <div>9 AM - 6 PM</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Send Proposal</a>
+                </div>
+              </div>
+            </div> -->
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
