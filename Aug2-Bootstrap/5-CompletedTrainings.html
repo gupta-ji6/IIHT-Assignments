@@ -1,203 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Completed Trainings</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <style>
+  <title>Completed Trainings</title>
+
+  <style>
     body {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: inherit;
-        width: 100vw;
-        height: 100vh;
-        color: white;
-      }
-      .container {
-        /* height: 80vh; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      background-size: cover;
+      background-repeat: repeat-x;
+      background-position: center;
+      height: 100vh;
+      color: white;
+    }
 
-      tbody {
-        color: white !important;
-      }
-      td {
-        padding: 20px;
-      }
-      .table-hover tbody tr:hover {
-        color: white;
-        font-weight: bolder;
-      }
-    </style>
-  </head>
-  <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img
-              src="mod-logo.png"
-              width="30"
-              height="30"
-              class="d-inline-block align-top"
-              alt=""
-            /> Mentor On Demand </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Search Trainings</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Current Trainings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Completed Trainings</a>
-              </li>
-            </ul>
-            <a class="nav-link" href="#">Notifications</a>  
-            <a class="nav-link" href="#">Logout</a>
-          </div>
-        </nav>
 
-    <div class="container align-items-center justify-content-center">
-      <div class="row align-items-center justify-content-center">
-        <h1 class="display-4 mb-5">Completed Trainings</h1>
-        <table class="table table-hover table-borderless table-responsive-xs table-responsive-sm">
-          <thead class="thead-light">
-            <tr>
-              <th scope="col">S.No.</th>
-              <th scope="col">Training ID</th>
-              <th scope="col">Domain</th>
-              <th scope="col">Price (INR)</th>
-              <th scope="col">Start Date</th>
-              <th scope="col">End Date</th>
-              <th scope="col">Trainer</th>
-              <th scope="col">Rating</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>68926</td>
-              <td>Java Full Stack</td>
-              <td>1200</td>
-              <td>12-07-2019</td>
-              <td>30-09-2019</td>
-              <td>John Cena</td>
-              <td>4.8 &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>68927</td>
-              <td>MEAN Stack</td>
-              <td>1600</td>
-              <td>06-07-2019</td>
-              <td>28-09-2019</td>
-              <td>Triple H</td>
-              <td>4.5 &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>68927</td>
-              <td>MERN Stack</td>
-              <td>2600</td>
-              <td>08-02-2019</td>
-              <td>16-04-2019</td>
-              <td>Shawn Michales</td>
-              <td>4.7 &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>68928</td>
-              <td>Dev Ops</td>
-              <td>4000</td>
-              <td>11-04-2019</td>
-              <td>21-07-2019</td>
-              <td>Steve Austin</td>
-              <td>4.2  &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>68929</td>
-              <td>Firebase Tools</td>
-              <td>600</td>
-              <td>15-07-2019</td>
-              <td>14-09-2019</td>
-              <td>Big Show</td>
-              <td>3.2 &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>68930</td>
-              <td>Git & GitHub</td>
-              <td>2400</td>
-              <td>26-02-2019</td>
-              <td>19-04-2019</td>
-              <td>Randy Orton</td>
-              <td>3.8 &#9733;</td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
-              <td>68931</td>
-              <td>Amazon AWS</td>
-              <td>1100</td>
-              <td>14-03-2019</td>
-              <td>16-05-2019</td>
-              <td>Rey Mysterio</td>
-              <td>3.6 &#9733;</td>
-            </tr>
-          </tbody>
-        </table>
+    tbody {
+      color: white !important;
+    }
 
-        
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    td {
+      padding: 20px;
+    }
+
+    .table-hover tbody tr:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="mod-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" /> Mentor On Demand </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Search Trainings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Current Trainings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Completed Trainings</a>
+        </li>
+      </ul>
+      <a class="nav-link text-center" href="#">Notifications</a>
+      <a class="nav-link text-center" href="#">Logout</a>
+    </div>
+  </nav>
+
+  <div class="container align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center">
+      <h2 class="display-4 mb-5">Completed Trainings</h2>
+      <table class="table table-hover table-borderless table-responsive-xs table-responsive-sm ">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">S.No.</th>
+            <th scope="col">Training ID</th>
+            <th scope="col">Domain</th>
+            <th scope="col">Price (INR)</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Trainer</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>68926</td>
+            <td>Java Full Stack</td>
+            <td>1200</td>
+            <td>12-07-2019</td>
+            <td>30-09-2019</td>
+            <td>John Cena</td>
+            <td>4.8 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>68927</td>
+            <td>MEAN Stack</td>
+            <td>1600</td>
+            <td>06-07-2019</td>
+            <td>28-09-2019</td>
+            <td>Triple H</td>
+            <td>4.5 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>68927</td>
+            <td>MERN Stack</td>
+            <td>2600</td>
+            <td>08-02-2019</td>
+            <td>16-04-2019</td>
+            <td>Shawn Michales</td>
+            <td>4.7 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>68928</td>
+            <td>Dev Ops</td>
+            <td>4000</td>
+            <td>11-04-2019</td>
+            <td>21-07-2019</td>
+            <td>Steve Austin</td>
+            <td>4.2 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>68929</td>
+            <td>Firebase Tools</td>
+            <td>600</td>
+            <td>15-07-2019</td>
+            <td>14-09-2019</td>
+            <td>Big Show</td>
+            <td>3.2 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>68930</td>
+            <td>Git & GitHub</td>
+            <td>2400</td>
+            <td>26-02-2019</td>
+            <td>19-04-2019</td>
+            <td>Randy Orton</td>
+            <td>3.8 &#9733;</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>68931</td>
+            <td>Amazon AWS</td>
+            <td>1100</td>
+            <td>14-03-2019</td>
+            <td>16-05-2019</td>
+            <td>Rey Mysterio</td>
+            <td>3.6 &#9733;</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

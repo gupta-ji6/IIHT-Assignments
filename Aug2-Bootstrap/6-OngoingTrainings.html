@@ -44,7 +44,6 @@
       }
       .table-hover tbody tr:hover {
         color: white;
-        font-weight: bolder;
       }
     </style>
   </head>
@@ -73,29 +72,29 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link text-center" href="#"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Search Trainings</a>
+                  <a class="nav-link text-center" href="#">Search Trainings</a>
                 </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Current Trainings</a>
+                <a class="nav-link text-center" href="#">Current Trainings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Completed Trainings</a>
+                <a class="nav-link text-center" href="#">Completed Trainings</a>
               </li>
             </ul>
-            <a class="nav-link" href="#">Notifications</a>  
-            <a class="nav-link" href="#">Logout</a>
+            <a class="nav-link text-center" href="#">Notifications</a>  
+            <a class="nav-link text-center" href="#">Logout</a>
           </div>
         </nav>
     
 
     <div class="container align-items-center justify-content-center">
       <div class="row align-items-center justify-content-center">
-        <h1 class="display-4 mb-5">Ongoing Trainings</h1>
+        <h1 class="display-4 mb-5">Current Trainings</h1>
         <table class="table table-hover table-borderless table-responsive-xs table-responsive-sm">
           <thead class="thead-light">
             <tr>
@@ -103,6 +102,7 @@
               <th scope="col">Training ID</th>
               <th scope="col">Domain</th>
               <th scope="col">Progress</th>
+              <th scope="col">Status</th>
               <th scope="col">Start Date</th>
               <th scope="col">End Date</th>
               <th scope="col">Trainer</th>
@@ -128,6 +128,7 @@
                   </div>
                 </div>
               </td>
+              <td>Ongoing</td>
               <td>12-07-2019</td>
               <td>30-09-2019</td>
               <td>John Cena</td>
@@ -151,6 +152,7 @@
                   </div>
                 </div>
               </td>
+              <td>Ongoing</td>
               <td>06-07-2019</td>
               <td>28-09-2019</td>
               <td>Triple H</td>
@@ -174,8 +176,9 @@
                   </div>
                 </div>
               </td>
-              <td>08-02-2019</td>
-              <td>16-04-2019</td>
+              <td>Confirmed</td>
+              <td>29-07-2019</td>
+              <td>08-10-2019</td>
               <td>Shawn Michales</td>
               <td><button type="button" class="btn btn-outline-light">Update</button></td>
             </tr>
@@ -197,8 +200,9 @@
                   </div>
                 </div>
               </td>
-              <td>11-04-2019</td>
-              <td>21-07-2019</td>
+              <td>Proposed</td>
+              <td>NA</td>
+              <td>NA</td>
               <td>Steve Austin</td>
               <td><button type="button" class="btn btn-outline-light">Update</button></td>
             </tr>
@@ -220,6 +224,7 @@
                   </div>
                 </div>
               </td>
+              <td>Ongoing</td>
               <td>15-07-2019</td>
               <td>14-09-2019</td>
               <td>Big Show</td>
@@ -243,8 +248,9 @@
                   </div>
                 </div>
               </td>
-              <td>26-02-2019</td>
-              <td>19-04-2019</td>
+              <td>Proposed</td>
+              <td>NA</td>
+              <td>NA</td>
               <td>Randy Orton</td>
               <td><button type="button" class="btn btn-outline-light">Update</button></td>
             </tr>
@@ -266,6 +272,7 @@
                   </div>
                 </div>
               </td>
+              <td>Ongoing</td>
               <td>14-03-2019</td>
               <td>16-05-2019</td>
               <td>Rey Mysterio</td>

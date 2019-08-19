@@ -27,39 +27,6 @@
         --ip-m: 60vw;
       }
 
-      /* laptops & desktops */
-      @media (min-width: 1025px) {
-        .form-signin {
-          width: var(--f-desktop);
-        }
-        input,
-        .form-content {
-          width: var(--ip-d);
-        }
-      }
-
-      /* tablets */
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .form-signin {
-          width: var(--f-tablet);
-        }
-        input,
-        .form-content {
-          width: var(--ip-t);
-        }
-      }
-
-      /* mobile */
-      @media (min-width: 320px) and (max-width: 480px) {
-        .form-signin {
-          width: var(--f-mobile);
-        }
-        input,
-        .form-content {
-          width: var(--ip-m);
-        }
-      }
-
       body {
         display: flex;
         align-items: center;
@@ -107,6 +74,43 @@
       .external {
         font-size: smaller;
       }
+
+      /* laptops & desktops */
+      @media (min-width: 1025px) {
+        .form-signin {
+          width: var(--f-desktop);
+        }
+        input,
+        .form-content {
+          width: var(--ip-d);
+        }
+      }
+
+      /* tablets */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .form-signin {
+          width: var(--f-tablet);
+        }
+        input,
+        .form-content {
+          width: var(--ip-t);
+        }
+      }
+
+      /* mobile */
+      @media (min-width: 320px) and (max-width: 480px) {
+        .form-signin {
+          width: var(--f-mobile);
+          height: 95vh;
+          margin-top: 2.5vh;
+          margin-bottom: 2.5vh;
+        }
+        input,
+        .form-content {
+          width: var(--ip-m);
+        }
+      }
+
     </style>
   </head>
   <body>
