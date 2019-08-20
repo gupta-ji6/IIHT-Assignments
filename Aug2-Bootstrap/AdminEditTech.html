@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <title>Technologies - Admin</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      background-size: cover;
+      background-repeat: repeat-x;
+      background-position: center;
+      /* height: 100vh; */
+    }
+
+    .navbar {
+      width: 100vw;
+    }
+
+    body>div>div>form>div>div.col-10>input,
+    body>div>div>form>div>div.col-2.align-middle>button {
+      height: 8vh;
+    }
+
+    a.nav-link {
+      color: rgba(0, 0, 0, 0.9);
+    }
+
+    .head {
+      color: white;
+      font-weight: lighter;
+    }
+
+    .contain {
+      width: 95vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid-parent {
+      width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+
+    form {
+      width: 80vw;
+    }
+
+    /* laptops & desktops */
+    @media (min-width: 1025px) {
+      .grid-parent {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      }
+    }
+
+    /* tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .grid-parent {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+    }
+
+    /* mobile */
+    @media (min-width: 320px) and (max-width: 480px) {
+      .grid-parent {
+        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="mod-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+      Mentor On Demand
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Modify Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Edit Technology</a>
+        </li>
+      </ul>
+      <!-- <a class="nav-link text-center" href="#">Notifications</a>   -->
+      <a class="nav-link text-center" href="#">Logout</a>
+    </div>
+  </nav>
+
+  <div class="mt-5 text-center head">
+    <h1>Edit Technologies</h1>
+  </div>
+  <div class="contain ml-3 mr-3">
+    <div class="grid-parent">
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/angular-icon.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Angular</h5>
+              <p class="card-text">
+                Angular is a platform for building mobile and desktop web applications.
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 2999</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/aws.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Amazon AWS</h5>
+              <p class="card-text">
+                  Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. 
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 1499</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/bootstrap.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">
+                  Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 2449</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Node JS</h5>
+              <p class="card-text">
+                  Node.js is an open-source, cross-platform JavaScript run-time environment 
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 4299</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/react.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">React</h5>
+              <p class="card-text">
+                  React is a JavaScript library for building user interfaces
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 3499</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="https://cdn.svgporn.com/logos/flutter.svg" class="card-img align-middle" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Flutter</h5>
+              <p class="card-text">
+                  Flutter is an open-source mobile application development framework created by Google
+              </p>
+              <p class="card-text">
+                <small>Fee</small>
+                <div>Rs. 1599</div>
+              </p>
+              <p class="card-text">
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Change Fee</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mb-5 text-center head">
+      <h1>Add Technologies</h1>
+    </div>
+    <div class="contain">
+
+    
+    <form class="shadow p-3 mb-5 bg-white rounded">
+        <div class="form-group row">
+          <label for="tech" class="col-sm-2 col-form-label">Technology</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="tech" placeholder="Enter your technology">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="domain" class="col-sm-2 col-form-label">Description</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="domain" placeholder="Enter description">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Domain</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Web App
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Mobile App
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                <label class="form-check-label" for="gridRadios3">
+                  Database
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <div class="col-sm-2">Price</div>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="exp" min="0">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Add Skill</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
