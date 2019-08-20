@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Login - Mentor On Demand</title>
+    <style>
+      :root {
+        --f-desktop: 35vw;
+        --f-tablet: 60vw;
+        --f-mobile: 80vw;
+        --ip-d: 20vw;
+        --ip-t: 40vw;
+        --ip-m: 60vw;
+      }
+
+      /* laptops & desktops */
+      @media (min-width: 1025px) {
+        .form-signin {
+          width: var(--f-desktop);
+        }
+        input,
+        .form-content {
+          width: var(--ip-d);
+        }
+      }
+
+      /* tablets */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .form-signin {
+          width: var(--f-tablet);
+        }
+        input,
+        .form-content {
+          width: var(--ip-t);
+        }
+      }
+
+      /* mobile */
+      @media (min-width: 320px) and (max-width: 480px) {
+        .form-signin {
+          width: var(--f-mobile);
+        }
+        input,
+        .form-content {
+          width: var(--ip-m);
+        }
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        height: 100vh;
+      }
+      .form-signin {
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        height: 80vh;
+        padding: 20px;
+      }
+      input#inputEmail,
+      input#inputPassword,
+      select {
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #2575fc !important;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .form-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 70vh;
+        margin-top: 15vh;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-signin">
+      <div class="form-content mx-auto my-auto">
+        <img src="mod-logo.png" alt="" width="150" height="150" class="mt-5" />
+        <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+        <label for="role" class="sr-only">Gender</label>
+        <select class="form-control" id="role">
+          <option disabled selected>Select your role</option>
+          <option>User</option>
+          <option>Mentor</option>
+          <option>Admin</option>
+        </select>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Email address"
+          required
+          autofocus
+        />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <a
+          class="btn btn-lg btn-primary btn-block"
+          role="button"
+          href="4-UserLandingPage.html"
+          >Sign in</a
+        >
+        <div>OR</div>
+        <h7
+          >Sign up as <a href="2-UserSignUp.html">User</a> or
+          <a href="3-MentorSignUp.html"> Mentor</a>.</h7
+        >
+        <!-- <h7>New mentor? <a href="#">Sign up as mentor </a>here.</h7> -->
+        <p class="mt-5 mb-3 text-muted text-center">
+          <small
+            >Copyright &copy; 2019 Mentor On Demand. All Rights Reserved</small
+          >
+        </p>
+      </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

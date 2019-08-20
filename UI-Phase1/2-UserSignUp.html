@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Sign Up - Mentor On Demand</title>
+    <style>
+      :root {
+        --f-desktop: 35vw;
+        --f-tablet: 60vw;
+        --f-mobile: 80vw;
+        --ip-d: 20vw;
+        --ip-t: 40vw;
+        --ip-m: 60vw;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+      }
+      .form-signin {
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 7.5vh;
+        margin-bottom: 7.5vh;
+        padding: 20px;
+        height: 85vh;
+      }
+      input#name,
+      input#inputEmail,
+      input#inputPassword,
+      input#confirmPassword,
+      .input-group mb-3,
+      select {
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #2575fc !important;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+      .form-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+      }
+
+      h7 {
+        margin-top: 10px;
+      }
+
+      .external {
+        font-size: smaller;
+      }
+
+      /* laptops & desktops */
+      @media (min-width: 1025px) {
+        .form-signin {
+          width: var(--f-desktop);
+        }
+        input,
+        .form-content {
+          width: var(--ip-d);
+        }
+      }
+
+      /* tablets */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .form-signin {
+          width: var(--f-tablet);
+        }
+        input,
+        .form-content {
+          width: var(--ip-t);
+        }
+      }
+
+      /* mobile */
+      @media (min-width: 320px) and (max-width: 480px) {
+        .form-signin {
+          width: var(--f-mobile);
+          height: 95vh;
+          margin-top: 2.5vh;
+          margin-bottom: 2.5vh;
+        }
+        input,
+        .form-content {
+          width: var(--ip-m);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-signin">
+      <div class="form-content mx-auto my-auto">
+        <img class="logo" src="mod-logo.png" alt="" width="150" height="150" />
+        <h1 class="h3 mb-3 font-weight-normal text-center">Sign Up</h1>
+        <label for="name" class="sr-only">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+          class="form-control"
+          autofocus
+          required
+        />
+        <label for="gender" class="sr-only">Gender</label>
+        <select class="form-control" id="gender">
+          <option disabled selected>Select your gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Don't want to specify</option>
+        </select>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Email address"
+          required
+        />
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="code">+91</span>
+          </div>
+          <input
+            type="tel"
+            class="form-control"
+            placeholder="Contact"
+            aria-label="contact"
+            aria-describedby="contact"
+            maxlength="10"
+            minlength="10"
+            required
+          />
+        </div>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <label for="confirmPassword" class="sr-only">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          class="form-control"
+          placeholder="Confirm Password"
+          required
+        />
+        <a
+          class="btn btn-lg btn-primary btn-block"
+          role="button"
+          href="1-Login.html"
+        >
+          Sign Up
+        </a>
+        <div class="text-muted external">
+          Already a member? <a href="1-Login.html">Login</a> here.
+        </div>
+        <div class="text-muted external">
+          Sign up as a <a href="3-MentorSignUp.html">mentor</a> instead.
+        </div>
+      </div>
+    </form>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hey, there!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You'll be signed up after I've learnt linking pages with SQL
+            &#128521;
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
