@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Users - Admin</title>
+
+    <style>
+      body {
+        background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      background-size: cover;
+      background-repeat: repeat-x;
+      background-position: center;
+        height: 100vh;
+        
+      }
+      .navbar {
+        width: 100vw;
+      }
+      body > div > div > form > div > div.col-10 > input, body > div > div > form > div > div.col-2.align-middle > button {
+        height: 8vh;
+      }
+      a.nav-link {
+        color: rgba(0, 0, 0, 0.9);
+      }
+      .head {
+        color: white;
+        font-weight: lighter;
+      }
+      .container {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="mod-logo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        /> Mentor On Demand </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link text-center" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-center" href="#">Modify Users</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#">Edit Technology</a>
+          </li>
+        </ul>
+        <!-- <a class="nav-link text-center" href="#">Notifications</a>   -->
+        <a class="nav-link text-center" href="#">Logout</a>
+      </div>
+    </nav>
+
+    <div class="mt-5 mb-5 text-center head">
+      <h1>Modify Users</h1>
+    </div>
+
+    <div class="table-responsive-sm table-responsive-xs container">
+        <table class="table table-light table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Password Hash</th>
+            <th>Block/Unblock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Addy Osmani</td>
+            <td>Mentor</td>
+            <td>Male</td>
+            <td>addy@mod.com</td>
+            <td>+919856125532</td>
+            <td>29821b0e714352428d6bc19a9cb595ad</td>
+            <td><button type="button" class="btn btn-outline-danger">Block</button></td>
+          </tr>
+          <tr>
+              <td>Wes Bos</td>
+              <td>Mentor</td>
+              <td>Male</td>
+              <td>wes@mod.com</td>
+              <td>+919696522235</td>
+              <td>29821b0e73231264728d6bc19a9cb595ad</td>
+              <td><button type="button" class="btn btn-outline-danger">Block</button></td>
+            </tr>
+            <tr>
+                <td>Dan Abramov</td>
+                <td>Mentor</td>
+                <td>Male</td>
+                <td>dan@mod.com</td>
+                <td>+91985666362</td>
+                <td>545vb0714352428d6bc19a9cb595ad</td>
+                <td><button type="button" class="btn btn-outline-success">Unblock</button></td>
+              </tr>
+              <tr>
+                  <td>Kelly Vaughn</td>
+                  <td>Mentor</td>
+                  <td>Female</td>
+                  <td>kelly@mod.com</td>
+                  <td>+918544549632</td>
+                  <td>78667gb0034352428d6bc19a9cb595ad</td>
+                  <td><button type="button" class="btn btn-outline-danger">Block</button></td>
+                </tr>
+                <tr>
+                    <td>Sidharth KP</td>
+                    <td>User</td>
+                    <td>Male</td>
+                    <td>addy@mod.com</td>
+                    <td>+91982235532</td>
+                    <td>29821b0e714352428d6bc19a9cb595ad</td>
+                    <td><button type="button" class="btn btn-outline-danger">Block</button></td>
+                  </tr>
+                  <tr>
+                      <td>Kyle Simpson</td>
+                      <td>User</td>
+                      <td>Female</td>
+                      <td>kyle@mod.com</td>
+                      <td>+919856125532</td>
+                      <td>65464464v646d4vs28d6bc19a9cb595ad</td>
+                      <td><button type="button" class="btn btn-outline-success">Unblock</button></td>
+                    </tr>
+        </tbody>
+        </table>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
