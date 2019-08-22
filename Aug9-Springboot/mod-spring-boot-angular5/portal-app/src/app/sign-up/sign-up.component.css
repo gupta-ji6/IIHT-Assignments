@@ -1,25 +1,118 @@
+:root {
+  --f-desktop: 35vw;
+  --f-tablet: 60vw;
+  --f-mobile: 80vw;
+  --ip-d: 20vw;
+  --ip-t: 40vw;
+  --ip-m: 60vw;
+}
+
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #000046; /* fallback for old browsers */
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.form-signin {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+  padding: 20px;
+  height: 85vh;
+}
+input#name,
+input#inputEmail,
+input#inputPassword,
+input#confirmPassword,
+.input-group mb-3,
+select {
+  margin-bottom: 10px;
+}
+button {
+  background-color: #2575fc !important;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+h7 {
+  margin-top: 10px;
+}
+
+.external {
+  font-size: smaller;
+}
+
+/* laptops & desktops */
+@media (min-width: 1025px) {
+  .form-signin {
+    width: var(--f-desktop);
+  }
+  input,
+  .form-content {
+    width: var(--ip-d);
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-signin {
+    width: var(--f-tablet);
+  }
+  input,
+  .form-content {
+    width: var(--ip-t);
+  }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-signin {
+    width: var(--f-mobile);
+    height: 95vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+  input,
+  .form-content {
+    width: var(--ip-m);
+  }
+}
+
+/* .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #000046; 
   background: -webkit-linear-gradient(
     to top,
     #1cb5e0,
     #000046
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to top,
     #1cb5e0,
     #000046
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 90vh;
   padding: 0;
   margin: 0;
-}
+} */
 
 /* :root {
   --f-desktop: 35vw;
@@ -61,7 +154,7 @@
   }
 } */
 
-.form-signin {
+/* .form-signin {
   background-color: white;
   border: 1px solid white;
   border-radius: 5px;
@@ -85,4 +178,4 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+} */

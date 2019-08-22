@@ -1,0 +1,66 @@
+.content {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  /* height: 100vh; */
+}
+
+.navbar {
+  width: 100vw;
+}
+
+body>div>div>form>div>div.col-10>input,
+body>div>div>form>div>div.col-2.align-middle>button {
+  height: 8vh;
+}
+
+a.nav-link {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.head {
+  color: white;
+  font-weight: lighter;
+}
+
+.contain {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-parent {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+form {
+  width: 80vw;
+}
+
+/* laptops & desktops */
+@media (min-width: 1025px) {
+  .grid-parent {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-parent {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .grid-parent {
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  }
+}

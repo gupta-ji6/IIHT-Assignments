@@ -1,0 +1,20 @@
+.content {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-repeat: repeat-x repeat-y;
+  background-position: center;
+  height: 100vh;
+  /* color: white; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+td {
+  padding: 20px;
+}

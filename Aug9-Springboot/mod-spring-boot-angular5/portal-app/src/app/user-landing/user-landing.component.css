@@ -1,5 +1,47 @@
 .content {
   background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://source.unsplash.com/1600x900/?tech,laptop,computer);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: 100vh;
+}
+.navbar {
+  width: 100vw;
+}
+
+div.form-row {
+  width: 70vw;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+body > div > div > form > div > div.col-10 > input,
+body > div > div > form > div > div.col-2.align-middle > a {
+  height: 8vh;
+  text-shadow: none;
+}
+a.nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+a.nav-link:hover {
+  color: black;
+}
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+/* .content {
+  background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
           ),
@@ -8,18 +50,18 @@
         background-repeat: no-repeat;
         background-position:inherit;
         /* height: 80vh; */
-}
+/* } */
 /* .navbar-dark .navbar-toggler {
   border-color: rgb(0, 0, 70);
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } */
-.container {
+/* .container {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-}
+} */

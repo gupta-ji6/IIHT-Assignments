@@ -1,0 +1,29 @@
+.content {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 100vh;
+}
+.navbar {
+  width: 100vw;
+}
+body > div > div > form > div > div.col-10 > input,
+body > div > div > form > div > div.col-2.align-middle > button {
+  height: 8vh;
+}
+a.nav-link {
+  color: rgba(0, 0, 0, 0.9);
+}
+.head {
+  color: white;
+  font-weight: lighter;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

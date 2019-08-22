@@ -1,3 +1,24 @@
+.content {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-repeat: repeat-x repeat-y;
+  background-position: center;
+  height: 100vh;
+  /* color: white; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+td {
+  padding: 20px;
+}
+
 /* .navbar-dark .navbar-toggler {
   border-color: rgb(0, 0, 70);
 }
@@ -5,6 +26,6 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } */
 
-.d-flex {
+/* .d-flex {
   width: 85vw;
-}
+} */

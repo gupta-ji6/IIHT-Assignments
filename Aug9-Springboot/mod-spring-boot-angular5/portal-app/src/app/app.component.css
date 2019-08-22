@@ -1,3 +1,20 @@
+/* .navbar-collapse.collapse {
+  display: inline !important;
+} */
+
+/* .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ } */
+
+ .mat-toolbar.mat-primary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+ .example-toolbar {
+   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+ }
+
 .gradient {
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
@@ -24,7 +41,6 @@ li a {
 li:hover {
   font-weight: bold;
   text-decoration: underline #000046;
-  /* font-size: 18px; */
   transform: scale(1.3);
   color: #000046;
   cursor: default;

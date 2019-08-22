@@ -1,8 +1,41 @@
-<div class="gradient">
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar" >
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <div><h1 class="example-app-name">Mentor On Demand</h1></div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav [mode]="side"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
+        <a mat-list-item routerLink="/home" >Home</a>
+        <a mat-list-item routerLink="/login" >Login</a>
+        <a mat-list-item routerLink="/signup" >Sign Up</a>
+        <a mat-list-item routerLink="/user" >User Landing Page</a>
+        <a mat-list-item routerLink="/search" >Search Trainings</a>
+        <a mat-list-item routerLink="/ongoing-trainings" >Current Trainings</a>
+        <a mat-list-item routerLink="/completed-trainings" >Completed Trainings</a>
+        <a mat-list-item routerLink="/mentor/completed-trainings" >Mentor - Completed Trainings</a>
+        <a mat-list-item routerLink="/edit-tech">Admin - Edit Technologies</a>
+        <a mat-list-item routerLink="/user-list">Admin - Edit Users</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+      <!-- <p>Hello</p> -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+<!-- <div class="gradient">
   <div class="container-fluid">
-    <!-- <a routerLink="/home"> -->
+    <a routerLink="/home">
       <span class="header">{{ title }} </span>
-    <!-- </a> -->
+    </a>
     <ul>
       <li><a routerLink="/login">Login</a></li>
       <li><a routerLink="/signup">Sign Up</a></li>
@@ -15,10 +48,101 @@
       <li *ngIf="router.url !== '/home'">
         <a routerLink="/ongoing-trainings">Ongoing Trainings</a>
       </li>
-      <!-- <li><a routerLink="/trainer">Trainer Profile</a></li> -->
-      <!-- <li><a routerLink="/users">List Users</a></li> -->
-      <!-- <li><a routerLink="/add">Add User</a></li> -->
     </ul>
   </div>
-</div>
-<router-outlet></router-outlet>
+</div> -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="4-UserLandingPage.html">
+    <img
+      src="./../assets/mod-logo.png"
+      width="30"
+      height="30"
+      class="d-inline-block align-center"
+      alt=""
+    />
+    Mentor On Demand
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link text-center" href="4-UserLandingPage.html"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="5-SearchTrainings.html"
+          >Search Trainings</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="6-UserCurrentTrainings.html"
+          >Current Trainings</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="7-UserCompletedTrainings.html"
+          >Completed Trainings</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="8-UserPayments.html"
+          >Payments</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center" href="10-MentorProfile.html"
+          >Mentor Profile</a
+        >
+      </li>
+    </ul>
+    <a class="nav-link text-center" href="#"
+      >Notifications <span class="badge badge-primary">4</span></a
+    >
+    <a class="nav-link text-center" href="1-Login.html">Logout</a>
+  </div>
+</nav> -->
+
+
+<!-- <div class="main">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <nav class="navbar navbar-expand-md navbar-blue">
+  <a>
+  <span class="site-name">Angular Bootstrap</span>
+  </a>
+  <button class="navbar-toggler ml-auto custom-toggler"type="button"data-toggle="collapse"
+ (click)="isCollapsed= !isCollapsed">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+ <div class="collapse navbar-collapse"[ngbCollapse]="isCollapsed"id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+  <li class="navbar-link"><a class="text-center" href="https://angular.io/tutorial">Tour of Heroes</a>
+  </li>
+  <li class="navbar-link"><a class="text-center" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
+  </li>
+  <li class="navbar-link"><a class="text-center" href="https://blog.angular.io/">Angular Blog</a>
+  </li>
+  </ul>
+  </div>
+  </nav>
+  </div>
+  </div>
+  </div>
+ </div> -->
+
+
