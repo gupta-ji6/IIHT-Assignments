@@ -7,8 +7,9 @@
  } */
 
  .mat-toolbar.mat-primary {
-  background: rgba(255, 255, 255, 0.9);
-  color: #000;
+  background: #d81b60;
+  /* background: linear-gradient(90deg, rgba(216,27,96,1) 0%, rgba(106,17,203,0.8578781854538691) 100%); */
+  color: #fff;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
  .example-toolbar {

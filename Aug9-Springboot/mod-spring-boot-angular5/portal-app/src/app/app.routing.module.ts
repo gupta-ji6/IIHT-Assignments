@@ -3,23 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { UserComponent } from './user/user.component';
 import {AddUserComponent} from './user/add-user.component';
-import {LoginComponent} from './login/login.component';
-import {SignUpComponent} from './sign-up/sign-up.component';
-import {UserLandingComponent} from './user-landing/user-landing.component';
-import {CompletedTrainingComponent} from './completed-training/completed-training.component';
-import {OngoingTrainingComponent} from './ongoing-training/ongoing-training.component';
-import {HomeComponent} from './home/home.component';
-import {SearchTrainingsComponent} from './search-trainings/search-trainings.component';
-import {MentorCompletedTrainingsComponent} from './mentor-completed-trainings/mentor-completed-trainings.component'
-import {AdminEditTechComponent} from './admin-edit-tech/admin-edit-tech.component'
-import {AdminUserListComponent} from './admin-user-list/admin-user-list.component';
+import {LoginComponent} from './components/login/login.component';
+import {SignUpComponent} from './components/user/sign-up/sign-up.component';
+import {UserLandingComponent} from './components/user/user-landing/user-landing.component';
+import {CompletedTrainingComponent} from './components/user/completed-training/completed-training.component';
+import {OngoingTrainingComponent} from './components/user/ongoing-training/ongoing-training.component';
+import {HomeComponent} from './components/home/home.component';
+import {SearchTrainingsComponent} from './components/user/search-trainings/search-trainings.component';
+import {MentorCompletedTrainingsComponent} from './components/mentor/mentor-completed-trainings/mentor-completed-trainings.component'
+import {AdminEditTechComponent} from './components/admin/admin-edit-tech/admin-edit-tech.component'
+import {AdminUserListComponent} from './components/admin/admin-user-list/admin-user-list.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: '/home', pathMatch: 'full', },
   { path: 'users', component: UserComponent },
   { path: 'add', component: AddUserComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignUpComponent },
+  { path: 'user/signup', component: SignUpComponent },
   { path: 'user', component: UserLandingComponent },
   { path: 'completed-trainings', component: CompletedTrainingComponent },
   { path: 'ongoing-trainings', component: OngoingTrainingComponent },

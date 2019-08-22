@@ -12,7 +12,7 @@
   .form-signin {
     width: var(--f-desktop);
   }
-  input,
+  .mat-form-field,
   .form-content {
     width: var(--ip-d);
   }
@@ -23,7 +23,7 @@
   .form-signin {
     width: var(--f-tablet);
   }
-  input,
+  .mat-form-field,
   .form-content {
     width: var(--ip-t);
   }
@@ -34,7 +34,7 @@
   .form-signin {
     width: var(--f-mobile);
   }
-  input,
+  .mat-form-field,
   .form-content {
     width: var(--ip-m);
   }
@@ -55,19 +55,22 @@
   /* margin-top: 10vh; */
   margin-bottom: 10vh;
   /* height: 80vh; */
-  padding: 20px;
+  padding: 30px;
 }
-input#inputEmail,
-input#inputPassword,
-select {
-  margin-bottom: 20px;
-}
-button {
-  background-color: #2575fc !important;
+
+.mat-raised-button {
+  background-color: #d81b60 !important;
+  color: white;
   margin-top: 20px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  width: 80%;
+  margin-bottom: 10px;
 }
+.mat-raised-button:hover {
+  text-decoration: none;
+}
+
 .form-content {
   display: flex;
   align-items: center;

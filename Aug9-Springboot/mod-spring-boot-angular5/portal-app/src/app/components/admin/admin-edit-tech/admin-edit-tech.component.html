@@ -1,0 +1,55 @@
+<div class="content">
+  <div class="mt-5 mb-5 text-center head">
+    <h1>Edit Technologies</h1>
+  </div>
+  <div class="contain ml-3 mr-3">
+    <div class="grid-parent">
+      <mat-card *ngFor="let tech of technologies">
+          <mat-card-header>
+            <mat-card-title><strong>{{tech.name}}</strong></mat-card-title>
+            <mat-card-subtitle>{{tech.fee | currency:'INR':'symbol'}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src={{tech.img}}>
+          <mat-card-content>
+            <p>{{tech.description}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Edit</button>
+            <button mat-button>Change Fee</button>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+  </div>
+
+  <div class="mb-5 mt-5 text-center head">
+    <h1>Add Technologies</h1>
+  </div>
+  <div class="contain">
+
+
+    <mat-card class="form-card">
+      <form>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Technology">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <textarea matInput placeholder="Description"></textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-select placeholder="Domain">
+                  <mat-option *ngFor="let domain of domains" [value]="domain.value">
+                    {{ domain.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <span matPrefix>&#8377; &nbsp;</span>
+                  <input type="number" matInput placeholder="Price">
+                </mat-form-field>
+                <button mat-raised-button>Add Skill</button>
+
+      </form>
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,43 @@
+<div class="content">
+    <form class="form-signin">
+        <div class="form-content mx-auto my-auto">
+          <img class="logo" src="./../../assets/mod-logo.png" width="150" height="150" />
+          <h1 class="h3 mb-3 font-weight-normal text-center">Sign Up</h1>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Full Name">
+            <mat-icon matSuffix class="material-icons-outlined">contacts</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="Gender">
+              <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                {{ gender.viewValue }}
+              </mat-option>
+            </mat-select>
+            <mat-icon matSuffix>person_outline</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email" type="email">
+            <mat-icon matSuffix>mail_outline</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Contact" type="tel" max="10" min="10">
+            <mat-icon matSuffix class="material-icons-outlined">call</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix class="material-icons-outlined" (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Confirm Password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix class="material-icons-outlined" (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+          <a mat-raised-button routerLink=".">Sign Up</a>
+          <div class="text-muted external">
+            Already a member? <a href="1-Login.html">Login</a> here.
+          </div>
+          <div class="text-muted external">
+            Sign up as a <a href="3-MentorSignUp.html">mentor</a> instead.
+          </div>
+        </div>
+      </form>  
+</div>

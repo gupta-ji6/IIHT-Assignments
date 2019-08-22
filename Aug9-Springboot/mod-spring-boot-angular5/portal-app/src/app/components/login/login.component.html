@@ -1,0 +1,43 @@
+<div class="content">
+  <form class="form-signin">
+    <div class="form-content mx-auto my-auto">
+      <img src="./../../assets/mod-logo.png" alt="" width="150" height="150" class="mt-5" />
+      <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+      <mat-form-field>
+        <mat-select placeholder="Select Your Role">
+          <mat-option *ngFor="let role of roles" [value]="role.value">
+            {{ role.viewValue }}
+          </mat-option>
+        </mat-select>
+        <mat-icon matSuffix>person_outline</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" [formControl]="emailFormControl"
+               [errorStateMatcher]="matcher">
+               <mat-icon matSuffix>mail_outline</mat-icon>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix class="material-icons-outlined" (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+      <a mat-raised-button routerLink=".">Sign In</a>
+      <div>OR</div>
+      <h6
+        >Sign up as <a href="2-UserSignUp.html">User</a> or
+        <a href="3-MentorSignUp.html"> Mentor</a>.</h6
+      >
+      <!-- <h7>New mentor? <a href="#">Sign up as mentor </a>here.</h7> -->
+      <p class="mt-5 mb-3 text-muted text-center">
+        <small
+          >Copyright &copy; 2019 Mentor On Demand. All Rights Reserved</small
+        >
+      </p>
+    </div>
+  </form>
+</div>
