@@ -1,0 +1,144 @@
+package com.ayush.user.dao.impl;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
+
+import com.ayush.user.dao.UserDAO;
+import com.ayush.user.model.User;
+
+public class SimpleJdbcUserDAO extends SimpleJdbcDaoSupport implements UserDAO  {
+
+	public void insert(User user) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+				 
+			getSimpleJdbcTemplate().update(sql,
+					user.getUser_id(),
+					user.getFirst_name(),
+					user.getLast_name(), 
+					user.getMobile(), 
+					user.getEmail_id(), 
+					user.getDob(), 
+					user.getCreated_by(), 
+					user.getCreation_date()  
+			);
+		
+	}
+
+	public void insertNamedParameter(User user) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (:user_id, :first_name, :last_name, :mobile, :email_id, :dob, :created_by, :creation_date)";
+			
+			Map<String, Object> parameters = new HashMap<String, Object>();
+			parameters.put("user_id", user.getUser_id());
+			parameters.put("first_name", user.getFirst_name());
+			parameters.put("last_name", user.getLast_name());
+			parameters.put("mobile", user.getMobile());
+			parameters.put("email_id", user.getEmail_id());
+			parameters.put("dob", user.getDob());
+			parameters.put("created_by", user.getCreated_by());
+			parameters.put("creation_date", user.getCreation_date());
+			
+			
+			getSimpleJdbcTemplate().update(sql, parameters);
+		
+	}
+
+	public void insertBatch(List<User> users) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+				
+			List<Object[]> parameters = new ArrayList<Object[]>();
+	        for (User user : users) {
+	            parameters.add(new Object[] {user.getUser_id(), user.getFirst_name(), user.getLast_name(), user.getMobile(), user.getEmail_id(), user.getDob(), user.getCreated_by(), user.getCreation_date()});
+	        }
+	        getSimpleJdbcTemplate().batchUpdate(sql, parameters);
+		
+	}
+
+	public void insertBatchNamedParameter(List<User> users) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (:user_id, :first_name, :last_name, :mobile, :email_id, :dob, :created_by, :creation_date)";
+				
+			List<SqlParameterSource> parameters = new ArrayList<SqlParameterSource>();
+	        for (User user : users) {
+	        	
+	        	parameters.add(new BeanPropertySqlParameterSource(user));
+	           
+	        }
+	        getSimpleJdbcTemplate().batchUpdate(sql,
+	        		parameters.toArray(new SqlParameterSource[0]));
+		
+	}
+
+	public void insertBatchNamedParameter2(List<User> users) {
+		SqlParameterSource[] params = SqlParameterSourceUtils.createBatch(users.toArray());
+        getSimpleJdbcTemplate().batchUpdate(
+                "INSERT INTO USERS (USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (:user_id, :first_name, :last_name, :mobile, :email_id, :dob, :created_by, :creation_date)",
+                params);
+		
+	}
+
+	public void insertBatchSQL(String sql) {
+		getJdbcTemplate().batchUpdate(new String[]{sql});
+		
+	}
+
+	public User findByUserId(int user_id) {
+	
+		return null;
+	}
+
+	public User findByUserId2(int user_id) {
+		String sql = "SELECT * FROM USERS WHERE USER_ID = ?";
+		 
+		User user = getSimpleJdbcTemplate().queryForObject(
+				sql,ParameterizedBeanPropertyRowMapper.newInstance(User.class), user_id);
+	
+		return user;
+	}
+
+	public List<User> findAll() {
+		String sql = "SELECT * FROM USERS";
+		 
+		List<User> users = 
+			getSimpleJdbcTemplate().query(sql, ParameterizedBeanPropertyRowMapper.newInstance(User.class));
+		
+		return users;
+	}
+
+	public List<User> findAll2() {
+		String sql = "SELECT * FROM USERS";
+		
+		List<User> users = 
+			getSimpleJdbcTemplate().query(sql, ParameterizedBeanPropertyRowMapper.newInstance(User.class));
+		
+		return users;
+	}
+
+	public String findUserNameById(int user_id) {
+		String sql = "SELECT NAME FROM USERS WHERE USER_ID = ?";
+		 
+		String name = getSimpleJdbcTemplate().queryForObject(
+				sql, String.class, user_id);
+	
+		return name;
+	}
+
+	public int findTotalCustomer() {
+		String sql = "SELECT COUNT(*) FROM USERS";
+		 
+		int total = getSimpleJdbcTemplate().queryForInt(sql);
+				
+		return total;
+	}
+
+}

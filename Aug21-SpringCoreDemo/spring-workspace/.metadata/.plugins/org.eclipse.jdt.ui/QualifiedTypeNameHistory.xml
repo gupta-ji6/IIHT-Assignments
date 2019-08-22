@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport"/>
+<fullyQualifiedTypeName name="com.ayush.user.model.User"/>
+<fullyQualifiedTypeName name="com.ayush.user.dao.UserDAO"/>
+</qualifiedTypeNameHistroy>

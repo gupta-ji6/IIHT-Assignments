@@ -1,0 +1,7 @@
+package com.ayush.user.dao;
+
+import com.ayush.user.dao.UserDAO;
+
+public class SimpleJdbcUserDAO implements UserDAO {
+
+}

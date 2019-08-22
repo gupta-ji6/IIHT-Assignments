@@ -1,0 +1,5 @@
+package com.ayush.user.dao.model;
+
+public class User {
+
+}

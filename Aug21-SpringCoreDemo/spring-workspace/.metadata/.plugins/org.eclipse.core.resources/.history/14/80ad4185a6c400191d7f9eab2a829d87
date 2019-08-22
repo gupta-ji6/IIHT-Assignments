@@ -1,0 +1,154 @@
+package com.ayush.user.dao.impl;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import com.ayush.user.dao.UserDAO;
+import com.ayush.user.model.User;
+import com.mkyong.customer.model.Customer;
+import com.mkyong.customer.model.CustomerRowMapper;
+
+public class JdbcUserDao extends JdbcDaoSupport implements UserDAO {
+
+	public void insert(User user) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+				 
+			getJdbcTemplate().update(sql, new Object[] {
+					user.getUser_id(),
+					user.getFirst_name(),
+					user.getLast_name(), 
+					user.getMobile(), 
+					user.getEmail_id(), 
+					user.getDob(), 
+					user.getCreated_by(), 
+					user.getCreation_date()   
+			});
+	}
+
+	public void insertNamedParameter(User user) {
+		// not supported
+		
+	}
+
+	public void insertBatch(final List<User> users) {
+		String sql = "INSERT INTO USERS " +
+				"(USER_ID, FIRST_NAME, LAST_NAME, MOBILE, EMAIL_ID, DOB, CREATED_BY, CREATION_DATE) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+				
+			getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
+				
+				
+				public void setValues(PreparedStatement ps, int i) throws SQLException {
+					User user = users.get(i);
+					ps.setInt(1, user.getUser_id());
+					ps.setString(2, user.getFirst_name());
+					ps.setString(3, user.getLast_name());
+					ps.setString(4, user.getMobile());
+					ps.setString(5, user.getEmail_id());
+					ps.setString(6, user.getDob());
+					ps.setString(7, user.getCreated_by());
+					ps.setString(8, user.getCreation_date());
+				}
+				
+				
+				public int getBatchSize() {
+					return users.size();
+				}
+			});
+		
+	}
+
+	public void insertBatchNamedParameter(List<User> user) {
+		//not supported
+		
+	}
+
+	public void insertBatchNamedParameter2(List<User> user) {
+		//not supported
+		
+	}
+
+	public void insertBatchSQL(String sql) {
+		getJdbcTemplate().batchUpdate(new String[]{sql});
+		
+	}
+
+	public User findByUserId(int userId) {
+//		String sql = "SELECT * FROM USERS WHERE USER_ID = ?";
+//		 
+//		User user = (User)getJdbcTemplate().queryForObject(
+//				sql, new Object[] { custId }, new CustomerRowMapper());
+	
+		return null;
+	}
+
+	public User findByUserId2(int userId) {
+		String sql = "SELECT * FROM USERS WHERE USER_ID = ?";
+		 
+		User user = (User)getJdbcTemplate().queryForObject(
+				sql, new Object[] { userId }, 
+				new BeanPropertyRowMapper(User.class));
+	
+		return user;
+	}
+
+	public List<User> findAll() {
+		String sql = "SELECT * FROM USERS";
+		 
+		List<User> users = new ArrayList<User>();
+	
+		List<Map> rows = getJdbcTemplate().queryForList(sql);
+		for (Map row : rows) {
+			User user = new User();
+			user.setUser_id((Integer)(row.get("USER_ID")));
+			user.setFirst_name((String)(row.get("FIRST_NAME")));
+			user.setLast_name((String)(row.get("LAST_NAME")));
+			user.setMobile((String)(row.get("MOBILE")));
+			user.setEmail_id((String)(row.get("EMAIL_ID")));
+			user.setDob((String)(row.get("DOB")));
+			user.setCreated_by((String)(row.get("CREATED_BY")));
+			user.setCreation_date((String)(row.get("CREATION_DATE")));
+			
+//			user.setCustId((Long)(row.get("CUST_ID")));
+//			user.setName((String)row.get("NAME"));
+//			user.setAge((Integer)row.get("AGE"));
+//			user.add(customer);
+		}
+		
+		return users;
+	}
+
+	public List<User> findAll2() {
+		String sql = "SELECT * FROM USERS";
+		
+		List<User> users  = getJdbcTemplate().query(sql,
+				new BeanPropertyRowMapper(User.class));
+		
+		return users;
+	}
+
+	public String findUserNameById(int userId) {
+		String sql = "SELECT NAME FROM USERS WHERE USER_ID = ?";
+		 
+		String name = (String)getJdbcTemplate().queryForObject(
+				sql, new Object[] { userId }, String.class);
+	
+		return name;
+	}
+
+	public int findTotalUser() {
+		String sql = "SELECT COUNT(*) FROM USERS";
+		 
+		int total = getJdbcTemplate().queryForInt(sql);
+				
+		return total;
+	}
+
+}
