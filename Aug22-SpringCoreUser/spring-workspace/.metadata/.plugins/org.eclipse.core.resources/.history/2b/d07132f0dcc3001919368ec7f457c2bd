@@ -1,0 +1,11 @@
+package org.springframework.context.support;
+
+import com.assignment.aug21.HelloSpring;
+
+public class ClassPathXmlApplicationContext {
+
+	public HelloSpring getBean(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

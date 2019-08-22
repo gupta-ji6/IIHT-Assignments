@@ -1,0 +1,67 @@
+package com.ayush.common;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ayush.user.dao.UserDAO;
+import com.ayush.user.model.User;
+
+
+public class JdbcTemplateApp {
+	public static void main( String[] args )
+    {
+    	//if you have time, 
+    	//it's better to create an unit test rather than testing like this :)
+    	
+    	 ApplicationContext context = 
+    		new ClassPathXmlApplicationContext("Spring-Module.xml");
+    	 
+    	 UserDAO userDAO = (UserDAO) context.getBean("userDAO");
+         User user1 = new User(1, "ayush", "gupta", "7877791648", "ayu@iiht.com", "2019-08-19", "Cognizant", "2019-07-22");
+         User user2 = new User(2, "rajat", "gupta", "7877791648", "ayu@iiht.com", "2019-08-19", "Cognizant", "2019-07-22");
+         User user3 = new User(3, "gaurav", "gupta", "7877791648", "ayu@iiht.com", "2019-08-19", "Cognizant", "2019-07-22");
+  
+         List<User>users = new ArrayList<User>();
+         users.add(user1);
+         users.add(user2);
+         users.add(user3);
+  
+         userDAO.insertBatch(users);
+
+         String sql = "UPDATE USERS SET NAME ='BATCHUPDATE'";
+         userDAO.insertBatchSQL(sql);
+         
+         System.out.println("Batch Insert Done!");
+         
+         User userA = userDAO.findByUserId(1);
+         System.out.println("User A : " + userA);
+         
+         User userB = userDAO.findByUserId2(1);
+         System.out.println("User B : " + userB);
+         
+         List<User> userAs = userDAO.findAll();
+         for(User u: userAs){
+         	 System.out.println("User As : " + userAs);
+         }
+        
+         List<User> userBs = userDAO.findAll2();
+         for(User u: userBs){
+         	 System.out.println("User Bs : " + userBs);
+         }
+         
+         String userName = userDAO.findUserNameById(1);
+         System.out.println("User Name : " + userName);
+         
+         int total = userDAO.findTotalUser();
+         System.out.println("Total : " + total);
+         
+         //delete all records
+         userDAO.insertBatchSQL("DELETE FROM USERS");
+         System.out.println("Records Deleted!");
+         
+       
+    }
+}

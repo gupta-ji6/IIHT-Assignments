@@ -1,0 +1,5 @@
+package com.ayush.user.dao;
+
+public class UserDAO {
+
+}
