@@ -5,19 +5,8 @@
   background-position: center;
   min-height: 100vh;
   margin-top: 0;
-}
-
-.navbar {
-  width: 100vw;
-}
-
-body>div>div>form>div>div.col-10>input,
-body>div>div>form>div>div.col-2.align-middle>button {
-  height: 8vh;
-}
-
-a.nav-link {
-  color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
@@ -30,6 +19,7 @@ a.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .grid-parent {
@@ -53,6 +43,7 @@ a.nav-link {
   text-transform: uppercase;
   width: 25vw;
 }
+
 .form-card {
   margin-bottom: 5vh;
 }

@@ -1,3 +1,23 @@
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mat-button {
+    margin-top: 5vh;
+  }
+  input {
+    width: 80vw;
+  }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .mat-button {
+    margin-top: 3vh;
+  }
+  input {
+    width: 80vw;
+  }
+}
+
 .content {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -9,14 +29,62 @@
   background-position: inherit;
   height: 100vh;
 }
-.navbar {
-  width: 100vw;
-}
 
-div.form-row {
-  width: 70vw;
+example-form {
+  width: 50vw;
   margin-top: 5vh;
   flex-wrap: wrap;
+  text-shadow: none;
+  height: 5vh;
+  background-color: white;
+}
+
+form {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+input {
+  flex: 0.6;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: black;
+  height: 5vh;
+  font-size: larger;
+  width: 50vw;
+  text-align: center;
+}
+/* .mat-form-field-infix {
+  background-color: white;
+} */
+/* mat-form-field {
+  background-color: white;
+  height: 5vh;
+  text-align: center;
+  text-shadow: none;
+  flex: 0.5;
+  min-width: 60vw;
+} */
+
+.mat-button {
+  flex: 0.2;
+  background-color: #d81b60;
+  color: white;
+  text-shadow: none;
+  padding-top: 0;
+  margin-top: 0;
+  height: 5vh;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.mat-button:hover {
+  text-decoration: none;
+  text-shadow: none;
 }
 
 body > div > div > form > div > div.col-10 > input,
@@ -24,12 +92,7 @@ body > div > div > form > div > div.col-2.align-middle > a {
   height: 8vh;
   text-shadow: none;
 }
-a.nav-link {
-  color: rgba(0, 0, 0, 0.5);
-}
-a.nav-link:hover {
-  color: black;
-}
+
 .container {
   height: 80vh;
   display: flex;
@@ -40,28 +103,3 @@ a.nav-link:hover {
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
-/* .content {
-  background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url(https://source.unsplash.com/1600x900/?tech,laptop,computer);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position:inherit;
-        /* height: 80vh; */
-/* } */
-/* .navbar-dark .navbar-toggler {
-  border-color: rgb(0, 0, 70);
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} */
-/* .container {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-} */

@@ -33,6 +33,9 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .form-signin {
     width: var(--f-mobile);
+    height: 95vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
   }
   .mat-form-field,
   .form-content {
@@ -46,6 +49,7 @@
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-repeat: repeat-x repeat-y;
   height: 100vh;
 }
 .form-signin {

@@ -1,5 +1,5 @@
 :root {
-  --f-desktop: 50vw;
+  --f-desktop: 35vw;
   --f-tablet: 60vw;
   --f-mobile: 80vw;
   --ip-d: 20vw;
@@ -11,9 +11,9 @@
 @media (min-width: 1025px) {
   .form-signin {
     width: var(--f-desktop);
+    width: 35vw;
   }
-  input,
-  .form-content {
+  .mat-form-field,.form-content {
     width: var(--ip-d);
   }
 }
@@ -23,8 +23,7 @@
   .form-signin {
     width: var(--f-tablet);
   }
-  input,
-  .form-content {
+  .mat-form-field,.form-content {
     width: var(--ip-t);
   }
 }
@@ -37,8 +36,7 @@
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
   }
-  input,
-  .form-content {
+  .mat-form-field,.form-content {
     width: var(--ip-m);
   }
 }
@@ -49,18 +47,18 @@
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat-x repeat-y;
+  /* background-attachment: fixed; */
   height: 100vh;
 }
 .form-signin {
   background-color: white;
   border: 1px solid white;
   border-radius: 5px;
-  margin-top: 7.5vh;
+  /* margin-top: 7.5vh; */
   margin-bottom: 7.5vh;
-  padding: 20px;
-  height: 85vh;
+  padding: 30px;
+  /* height: 85vh; */
 }
 
 .mat-raised-button {

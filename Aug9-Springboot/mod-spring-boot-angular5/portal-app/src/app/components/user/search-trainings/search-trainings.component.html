@@ -1,7 +1,29 @@
 <div class="content">
   <div class="container align-items-center justify-content-center">
     <div class="row align-items-center justify-content-center">
-      <form>
+      
+      <mat-card class="form-card">
+        <form>
+            <h1>Search</h1>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Search...">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input matInput type="date">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <mat-select placeholder="Domain">
+                    <mat-option *ngFor="let domain of domains" [value]="domain.value">
+                      {{ domain.viewValue }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                  <button mat-raised-button>Search</button>
+  
+        </form>
+      </mat-card>
+      
+      <!-- <form>
         <div
           class="form-row d-flex flex-wrap justify-content-around align-items-center"
         >
@@ -37,7 +59,7 @@
             </button>
           </div>
         </div>
-      </form>
+      </form> -->
 
       <div class="row mb-5 mt-5">
         <div class="col-sm-4 mb-3">

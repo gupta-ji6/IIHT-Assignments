@@ -4,17 +4,38 @@
   background-repeat: repeat-x;
   background-position: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.navbar {
-  width: 100vw;
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  background-color: white;
+  width: 85vw;
 }
-body > div > div > form > div > div.col-10 > input,
-body > div > div > form > div > div.col-2.align-middle > button {
-  height: 8vh;
+
+.example-header {
+  min-height: 64px;
+  padding: 8px 24px 0;
 }
-a.nav-link {
-  color: rgba(0, 0, 0, 0.9);
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+  background-color: white;
 }
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+  color: black;
+  background-color: white;
+}
+
 .head {
   color: white;
   font-weight: lighter;

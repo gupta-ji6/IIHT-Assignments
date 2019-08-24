@@ -1,9 +1,82 @@
 <div class="content">
-  <div class="mt-5 mb-5 text-center head">
+  <div class="mb-5 text-center head">
     <h1>Modify Users</h1>
   </div>
 
-  <div class="table-responsive-sm table-responsive-xs container">
+  <div class="example-container mat-elevation-z8">
+    <div class="example-header">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+    </div>
+  
+    <mat-table #table [dataSource]="dataSource" matSort>
+  
+      <ng-container matColumnDef="sno">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> S.No. </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.sno}} </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> User ID </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.id}} </mat-cell>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.name}} </mat-cell>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.type}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="gender">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Gender </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.gender}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.email}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="contact">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Contact </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.contact}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="passwordHash">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Password Hash </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{user.passwordHash}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="block">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Block/Unblock </mat-header-cell>
+        <mat-cell *matCellDef="let user">
+          <button mat-button [hidden]="user.block" color="accent">Block</button>
+          <button mat-button [hidden]="!user.block" color="basic">Unblock</button>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator #paginator
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 20]"
+                 [showFirstLastButtons]="true">
+  </mat-paginator>
+
+  </div>
+  
+
+  <!-- <div class="table-responsive-sm table-responsive-xs container">
     <table class="table table-light table-hover table-borderless">
       <thead class="thead-dark text-center">
         <tr>
@@ -97,5 +170,5 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> -->
 </div>
