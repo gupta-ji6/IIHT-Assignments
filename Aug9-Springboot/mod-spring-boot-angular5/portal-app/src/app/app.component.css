@@ -89,3 +89,7 @@ router-outlet {
   width: 100vw;
   margin: 0;
 }
+
+.mat-nav-list .mat-list-item {
+  color: white !important;
+}
