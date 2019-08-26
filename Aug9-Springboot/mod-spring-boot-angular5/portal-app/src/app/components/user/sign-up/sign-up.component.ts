@@ -13,6 +13,8 @@ export class SignUpComponent implements OnInit {
     {value: 'Female', viewValue: 'Female'},
     {value: 'Don\'t want to specify', viewValue: 'Don\'t want to specify'}
   ];
+
+  hide: any;
   
   constructor() { }
 

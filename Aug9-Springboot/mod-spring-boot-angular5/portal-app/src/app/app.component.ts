@@ -12,6 +12,7 @@ export class AppComponent implements OnInit, OnDestroy {
   fillerNav = Array.from({length: 8}, (_, i) => `Nav Item ${i + 1}`);
   title = 'Mentor On Demand';
   isCollapsed: boolean = true;
+  side: any;
 
   // constructor(public router: Router) {
   // }

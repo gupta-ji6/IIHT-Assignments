@@ -16,6 +16,8 @@ export class MentorSignUpComponent implements OnInit {
 
   skills = new FormControl();
 
+  hide: any;
+
   skillList = ['JavaScript', 'Java', 'Android', 'Objective C', 'HTML5', 'CSS3', 'React', 'Angular', 'Vue', 'NodeJS', 'MongoDB', 'SQL', 'Firebase', 'Git'];
 
   countries = [
