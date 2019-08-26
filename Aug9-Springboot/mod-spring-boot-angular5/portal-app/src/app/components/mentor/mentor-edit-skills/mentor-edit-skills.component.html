@@ -1,3 +1,75 @@
-<p>
-  mentor-edit-skills works!
-</p>
+<div class="content">
+  <div class="container align-items-center justify-content-center">
+    <div class="mt-5 head">
+      <h1>Edit Skills - Kent C Dodds</h1>
+    </div>
+    <div class="contain ml-3 mr-3">
+      <div class="grid-parent">
+        <mat-card *ngFor="let skill of skills">
+          <mat-card-header>
+            <mat-card-title
+              ><strong
+                ><h3>{{ skill.name }}</h3></strong
+              ></mat-card-title
+            >
+          </mat-card-header>
+          <img mat-card-image src="{{ skill.logo }}" />
+          <mat-card-content>
+            <div>
+              <small>Domain </small>
+              <p>
+                <strong>{{ skill.domain }}</strong>
+              </p>
+            </div>
+            <div>
+              <small>Proficiency</small>
+              <p>
+                <strong>{{ skill.proficiency }}</strong>
+              </p>
+            </div>
+            <div>
+              <small>No. Of Trainings</small>
+              <p>
+                <strong>{{ skill.numOfTrainings }}</strong>
+              </p>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="accent">
+              <mat-icon color="accent">edit</mat-icon> Edit
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="text-center head">
+      <h1>Add Skill</h1>
+    </div>
+
+    <div class="contain">
+      <mat-card class="form-card">
+        <form>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Skill" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Domain">
+              <mat-option *ngFor="let domain of domains" [value]="domain.value">
+                {{ domain.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Proficiency">
+              <mat-option *ngFor="let pro of proficiency" [value]="pro.value">
+                {{ pro.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button>Add Skill</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
