@@ -26,11 +26,11 @@
         <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
         <mat-icon matSuffix class="material-icons-outlined" (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
       </mat-form-field>
-      <a mat-raised-button routerLink=".">Sign In</a>
+      <a mat-raised-button routerLink="/home">Sign In</a>
       <div>OR</div>
       <h6
-        >Sign up as <a href="2-UserSignUp.html">User</a> or
-        <a href="3-MentorSignUp.html"> Mentor</a>.</h6
+        >Sign up as <a routerLink="/user/signup">User</a> or
+        <a routerLink="/mentor/signup"> Mentor</a>.</h6
       >
       <!-- <h7>New mentor? <a href="#">Sign up as mentor </a>here.</h7> -->
       <p class="mt-5 mb-3 text-muted text-center">
