@@ -1,92 +1,98 @@
 <div class="content">
-  <div class="container align-items-center justify-content-center">
-    <div class="row align-items-center justify-content-center table-responsive-xs table-responsive-sm">
-      <h2 class="mt-5 mb-5 text-center">Completed Trainings</h2>
-      <table class="table table-hover table-borderless table-light">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">S.No.</th>
-            <th scope="col">Training ID</th>
-            <th scope="col">Domain</th>
-            <th scope="col">Price (INR)</th>
-            <th scope="col">Start Date</th>
-            <th scope="col">End Date</th>
-            <th scope="col">Trainer</th>
-            <th scope="col">Rating</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>68926</td>
-            <td>Java Full Stack</td>
-            <td>1200</td>
-            <td>12-07-2019</td>
-            <td>30-09-2019</td>
-            <td>Jeol Simpson</td>
-            <td>4.8 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>68927</td>
-            <td>MEAN Stack</td>
-            <td>1600</td>
-            <td>06-07-2019</td>
-            <td>28-09-2019</td>
-            <td>Jeol Simpson</td>
-            <td>4.5 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>68927</td>
-            <td>MERN Stack</td>
-            <td>2600</td>
-            <td>08-02-2019</td>
-            <td>16-04-2019</td>
-            <td>Jeol Simpson</td>
-            <td>4.7 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>68928</td>
-            <td>Dev Ops</td>
-            <td>4000</td>
-            <td>11-04-2019</td>
-            <td>21-07-2019</td>
-            <td>Jeol Simpson</td>
-            <td>4.2 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>68929</td>
-            <td>Firebase Tools</td>
-            <td>600</td>
-            <td>15-07-2019</td>
-            <td>14-09-2019</td>
-            <td>Jeol Simpson</td>
-            <td>3.2 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>68930</td>
-            <td>Git & GitHub</td>
-            <td>2400</td>
-            <td>26-02-2019</td>
-            <td>19-04-2019</td>
-            <td>Jeol Simpson</td>
-            <td>3.8 &#9733;</td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>68931</td>
-            <td>Amazon AWS</td>
-            <td>1100</td>
-            <td>14-03-2019</td>
-            <td>16-05-2019</td>
-            <td>Jeol Simpson</td>
-            <td>3.6 &#9733;</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="mb-5 text-center head">
+    <h1>Completed Trainings - Wes Bos</h1>
+  </div>
 
+  <div class="example-container mat-elevation-z8">
+    <div class="example-header">
+      <mat-form-field>
+        <input
+          matInput
+          (keyup)="applyFilter($event.target.value)"
+          placeholder="Filter"
+        />
+      </mat-form-field>
+    </div>
+
+    <mat-table #table [dataSource]="dataSource" matSort>
+      <ng-container matColumnDef="sno">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          S.No.
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training"> {{ training.sno }} </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="trainingId">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Training ID
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training">
+          {{ training.trainingId }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="domain">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Domain
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training"> {{ training.domain }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Price
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training">
+          {{ training.price | currency: "INR":"symbol" }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="startDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Start Date
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training">
+          {{ training.startDate }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="duration">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Duration
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training">
+          {{ training.duration }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="trainer">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Trainer
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training"> {{ training.trainer }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="rating">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Rating
+        </mat-header-cell>
+        <mat-cell *matCellDef="let training">
+          {{ training.rating }} <mat-icon>star_border</mat-icon>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+
+    <mat-paginator
+      #paginator
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]"
+      [showFirstLastButtons]="true"
+    >
+    </mat-paginator>
+  </div>
 </div>
