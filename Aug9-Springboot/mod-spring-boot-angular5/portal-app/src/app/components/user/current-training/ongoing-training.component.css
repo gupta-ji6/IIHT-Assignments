@@ -1,0 +1,53 @@
+.content {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  background-color: white;
+  width: 90vw;
+}
+
+.example-header {
+  min-height: 64px;
+  padding: 8px 24px 0;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+  background-color: white;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+  color: black;
+  background-color: white;
+}
+.mat-progress-bar {
+  width: 80%;
+}
+.head {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
