@@ -1,69 +1,29 @@
 <div class="content">
   <div class="container align-items-center justify-content-center">
     <div class="row align-items-center justify-content-center">
-      
       <mat-card class="form-card">
         <form>
-            <h1>Search</h1>
-            <mat-form-field class="example-full-width">
-                <input matInput placeholder="Search...">
-              </mat-form-field>
-              <mat-form-field class="example-full-width">
-                <input matInput type="date">
-                </mat-form-field>
-                <mat-form-field class="example-full-width">
-                  <mat-select placeholder="Domain">
-                    <mat-option *ngFor="let domain of domains" [value]="domain.value">
-                      {{ domain.viewValue }}
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
-                  <button mat-raised-button>Search</button>
-  
+          <h1>Search</h1>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Search..." value="React" autofocus/>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput type="date" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Domain">
+              <mat-option *ngFor="let domain of domains" [value]="domain.value">
+                {{ domain.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button (click)="showResults()">Search</button>
         </form>
       </mat-card>
-      
-      <!-- <form>
-        <div
-          class="form-row d-flex flex-wrap justify-content-around align-items-center"
-        >
-          <div>
-            <input
-              class="form-control form-control-lg text-center"
-              type="text"
-              placeholder="What would you like to learn today?"
-              value="React JS"
-            />
-          </div>
-          <div>
-            <input
-              class="form-control form-control-lg text-center"
-              type="date"
-              placeholder="Start Date"
-            />
-          </div>
-          <div class="form-group-lg">
-            <select class="form-control-lg" id="exampleFormControlSelect1">
-              <option disabled selected>Select Domain</option>
-              <option>Front-end</option>
-              <option>Back-end</option>
-              <option>DevOps</option>
-              <option>Amazon AWS</option>
-              <option>Mobile App Development</option>
-              <option>Web App Development</option>
-            </select>
-          </div>
-          <div class="align-middle">
-            <button type="submit" class="btn btn-lg btn-dark btn-block">
-              Search
-            </button>
-          </div>
-        </div>
-      </form> -->
 
-      <div class="row mb-5 mt-5">
+      <div class="row mb-5 mt-5" *ngIf="!hideResults">
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -98,10 +58,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -109,7 +66,7 @@
         </div>
 
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -144,10 +101,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -155,7 +109,7 @@
         </div>
 
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -190,10 +144,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -201,9 +152,9 @@
         </div>
       </div>
 
-      <div class="row mb-5">
+      <div class="row mb-5" *ngIf="!hideResults">
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -238,10 +189,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -249,7 +197,7 @@
         </div>
 
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -284,10 +232,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -295,7 +240,7 @@
         </div>
 
         <div class="col-sm-4 mb-3">
-          <div class="card">
+          <div class="card mat-elevation-z8">
             <img
               src="https://i.pravatar.cc/300"
               class="card-img-top"
@@ -330,10 +275,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a
-                href="10-MentorProfile.html"
-                role="button"
-                class="btn btn-primary"
+              <a mat-button routerLink="/mentor/profile" color="accent"
                 >See Profile</a
               >
             </div>
@@ -342,5 +284,4 @@
       </div>
     </div>
   </div>
-
 </div>

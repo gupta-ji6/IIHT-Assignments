@@ -18,6 +18,13 @@ export class SearchTrainingsComponent implements OnInit {
     {value: 'API', viewValue: 'API'}
   ];
   
+  hideResults = true;
+
+  showResults() {
+    this.hideResults = false;
+  }
+
+
   constructor() { }
 
   ngOnInit() {

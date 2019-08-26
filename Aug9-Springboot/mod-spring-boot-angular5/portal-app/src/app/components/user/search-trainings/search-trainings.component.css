@@ -4,7 +4,7 @@
   background-repeat: repeat-x repeat-y;
   background-position: inherit;
   width: 100vw;
-  /* height: 100vh; */
+  min-height: 95vh;
 }
 
 .container {
@@ -34,6 +34,15 @@ form {
 .mat-raised-button {
   background-color: #d81b60;
   width: 20vw;
+  color: white;
+}
+
+.mat-button:hover {
+  text-decoration: none;
+}
+
+.mat-button {
+  background-color: #d81b60;
   color: white;
 }
 
