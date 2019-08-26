@@ -7,3 +7,8 @@
   padding-top: 3vh;
   padding-bottom: 5vh;
 }
+
+.mat-button {
+  background-color: #d81b60;
+  color: white;
+}
